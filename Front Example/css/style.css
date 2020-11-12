@@ -1,0 +1,362 @@
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #595041;
+}
+
+ul{
+  list-style:none;
+}
+
+
+/*** main ***/
+/*상단*/
+header{
+  margin: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #d3c493;
+}
+
+/*관리페이지*/
+.managerTab{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.managerLogin{
+  font-size: 10px;
+  margin-left: 7px;
+}
+
+/*로그인, 회원가입*/
+.loginSign{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.login, .sign{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+/*상단 메뉴(로고, 메뉴)*/
+.logo{
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 100px;
+  height: 80px;
+}
+
+header > nav{
+  height: 45px;
+  position: absolute;
+  left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+
+.menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.menu ul{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.menu ul > li{
+  display: inline-block;
+  margin: 0 auto;
+  color: #595041;
+}
+
+.menu ul > li > a{
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.menu ul > li > a:hover{
+  color: #660033;
+  font-weight: bold;
+}
+
+/*main*/
+main{
+  min-height: 700px;
+  align-items: center;
+  background: #f2f4f7;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  display: grid;
+}
+
+.imageSlide{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imdSld{
+  width: auto;
+  height: auto;
+  margin-left: -30px;
+}
+
+/*메인메뉴 예약 바*/
+.bookingMainBar, .reservationBar, .paymentWayBar{
+  width: auto;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: white;
+}
+
+.bookingMainBar dl > dt{
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  color: #595041;
+}
+
+.bookingMainBarnu dl > dt > dd{
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookingSelect, .reservation, .paymentWay{
+  padding: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #595041;
+}
+
+.bookingSelect > dl{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bookingSelect > dl > dd{
+  margin: auto;
+}
+
+.bookingSelect > dl > dd > a{
+  color: #d3c493;
+  font-size: 10px;
+}
+
+.searchRoom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 50px;
+  color: #595041;
+}
+
+/*이벤트 페이지*/
+.eventPage{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+/*하단*/
+footer{
+  height: 100px;
+  margin: auto;
+  padding: 0 8px 0 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  background-color: #d3c493;
+}
+
+.bottomBox{
+  flex: 3;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.bottomBox ul > li {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.bottom_box ul > li:last-child{
+  font-weight: bold;
+}
+
+
+/***booking***/
+.bContainer{
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%);
+}
+
+
+/***payment***/
+.reservationBar dl > dt{
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  color: #595041;
+}
+
+.reservationBar dl > dt > dd{
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reservation > dl{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.reservation > dl > dd{
+  margin: auto;
+}
+
+.reservation > dl > dd > a{
+  color: #d3c493;
+  font-size: 10px;
+}
+
+.paymentWayBar dl > dt{
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  color: #595041;
+}
+
+.paymentWayBar dl > dt > dd{
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paymentWay > dl{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.paymentWay > dl > dd{
+  margin: auto;
+}
+
+.paymentGo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 50px;
+  color: #595041;
+}
+
+
+/***manager***/
+.manage{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.manageProflie{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+.hotelLogo{
+  top: 10%;
+  left: 1%;
+  position: absolute;
+  width: 100px;
+  height: 80px;
+}
+
+.manageMenu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.manageMenu nav{
+  height: 45px;
+  position: absolute;
+  top: 10; left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+
+.manageMenu ul{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.manageMenu ul > li{
+  display: inline-block;
+  margin: 0 auto;
+  color: #595041;
+}
+
+.manageMenu ul > li > a{
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.manageMenu ul > li > a:hover{
+  color: #660033;
+  font-weight: bold;
+}
+
+.mContainer{
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%);
+}
