@@ -11,18 +11,20 @@
 <body>
   <!-- 상단 -->
   <header>
-    <div class="managerTab">
-      <a href="#" class="managerLogin">관리페이지</a>
+    <div class="managerscreen">
+      <a href="main.html">
+        <img src="img/logo.png" class="hotelLogo" />
+      </a>
+      <div class="managerTab">
+        <a>관리페이지</a>
+      </div>
     </div>
     <!-- 관리자 -->
     <div class="manage">
-      <a href="#" class="manageProflie">000 관리자</a>
+      <a class="manageProflie">000 관리자</a>
     </div>
 
     <!-- 상단 메뉴 -->
-    <a href="main.html">
-      <img src="img/logo.png" class="hotelLogo" />
-    </a>
     <nav>
       <div class="manageMenu">
         <ul>
@@ -66,36 +68,50 @@
               <a class="dropDownItem" href="#">문의리스트</a>
             </div>-->
           </li>
-          <li><a href="#">사이트관리</a></li>
+          <li class="dropDown"><a href="#">사이트관리</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <!-- 메인 -->
-  <main>
-    <div class="mContainer">
-      <div class="imageSlide">
-        관리별 데이터 리스트
+    <main>
+      <div class="mContainer">
+        <div class="imageSlide">
+          관리별 데이터 리스트
+        </div>
+      </div>
+      <div class="pageNum">
+
+      </div>
+    </main>
+
+  <!--- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="#">호텔소개</a></li>
+        <li><a style="text-align: right;" href="#">고객문의</a></li>
+        <li><a style="text-align: right;" href="#">게시판</a></li>
+      </ul>
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div class="bottomWord">
+        <p>(주)CDS 경기도 안산시 상록구 사3동 한양대학로 55 (우)15588</p>
+        <p>대표 이용현 | 연락처 010-0000-0000</p>
+        <p>이메일 00000@gmail.com | FAX 00-000-0000</p>
+        <p>사업자등록번호 000-00-00000</p>
+        <p>통신판매신고번호 중구00000호</p>
       </div>
     </div>
-    <div class="pageNum">
-
-    </div>
-  </main>
-
-  <!-- 하단 -->
-  <footer>
-    <div id="footer" role="bottomBox">
-      <ul>
-        <li><a>회사명 주소</a></li>
-        <li><a>대표</a></li>
-        <li><a>사업자등록번호</a></li>
-        <li><a>통신판매신고번호</a></li>
-        <li><a href="#">&copy; CDS(코딩소년단) Corp.</a></li>
-      </ul>
+    <div class="copyright">
+      <a href="#">Copyright &copy; CDS(코딩소년단) Co, LTD. ALL RIGHTS RESERVED.</a>
     </div>
   </footer>
 </body>
-
 </html>

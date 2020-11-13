@@ -2,7 +2,7 @@ body{
   margin: 0;
 }
 
-a{
+a, p{
   text-decoration: none;
   color: #595041;
 }
@@ -23,18 +23,6 @@ header{
   background-color: #d3c493;
 }
 
-/*관리페이지*/
-.managerTab{
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.managerLogin{
-  font-size: 10px;
-  margin-left: 7px;
-}
-
 /*로그인, 회원가입*/
 .loginSign{
   position: absolute;
@@ -49,15 +37,6 @@ header{
 }
 
 /*상단 메뉴(로고, 메뉴)*/
-.logo{
-  left: 50%;
-  top: 0%;
-  transform: translateX(-50%);
-  position: absolute;
-  width: 100px;
-  height: 80px;
-}
-
 header > nav{
   height: 45px;
   position: absolute;
@@ -74,29 +53,84 @@ header > nav{
   font-size: 15px;
 }
 
-.menu ul{
-  left: 0;
-  right: 0;
+.menu1{
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
-}
-
-.menu ul > li{
-  display: inline-block;
-  margin: 0 auto;
   color: #595041;
-}
-
-.menu ul > li > a{
-  text-decoration: none;
   cursor: pointer;
-  margin-right: 30px;
+  transition: all 0.3s ease-in-out;
 }
 
-.menu ul > li > a:hover{
-  color: #660033;
+.menu1:hover{
   font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+.menu2{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu2:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+.logo{
+  display: inline-block;
+  width: 150px;
+  height: 110px;
+  margin-left: auto;
+  margin-top: -25px;
+  margin-right: auto;
+}
+
+.menu3{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu3:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+.menu4{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu4:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
 }
 
 /*main*/
@@ -184,6 +218,18 @@ main{
   color: #595041;
 }
 
+.searchRoom > p{
+  padding: 7px 13px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #595041;
+}
+
+.searchRoom > p:hover{
+  color: white;
+  background-color: #595041;
+}
+
 /*이벤트 페이지*/
 .eventPage{
   margin: auto;
@@ -194,28 +240,72 @@ main{
 
 /*하단*/
 footer{
-  height: 100px;
-  margin: auto;
-  padding: 0 8px 0 8px;
-  display: flex;
-  flex-direction: column;
+  height: 200px;
+  padding: 50px 20px 0px;
   font-size: 12px;
   background-color: #d3c493;
 }
 
-.bottomBox{
-  flex: 3;
-  padding-top: 20px;
-  font-size: 14px;
+.bottomMenu ul{
+  margin: 0 10% 0 10%;
+  padding: 0;
+  text-align: center;
 }
 
-.bottomBox ul > li {
+.bottomMenu ul > li{
   display: inline-block;
-  margin-left: 8px;
+  color: #595041;
 }
 
-.bottom_box ul > li:last-child{
+.bottomMenu ul > li > a{
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 45px;
+}
+
+.bottomMenu ul > li > a:hover{
+  color: #4f473a;
   font-weight: bold;
+}
+
+.bottomLogo{
+  width: 200px;
+  height: 157.89;
+  height: auto;
+  float: left;
+  margin-left: 10%;
+  padding: 0;
+}
+
+.snsLogo{
+  position: absolute;
+  height: 99.6px;
+  width: 310px;
+  left:50%;
+  margin-top: 20px;
+  margin-left:-180px;
+  text-align:center
+}
+
+.bottomWord{
+  float: right;
+  margin-top: 1%;
+  width: 33%;
+}
+
+.bottomWord > p{
+  margin-top: 5px;
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+.copyright{
+  width: 100%;
+  float: left;
+  position: relative;
+  font-size: 5px;
+  text-align: left;
+  bottom: 0;
 }
 
 
@@ -292,24 +382,36 @@ footer{
 
 
 /***manager***/
+/***manager***/
+
 .manage{
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.manageProflie{
-  font-size: 10px;
-  margin-left: 3px;
-  margin-right: 7px;
+.managerscreen{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 5%;
 }
 
 .hotelLogo{
-  top: 10%;
-  left: 1%;
-  position: absolute;
-  width: 100px;
-  height: 80px;
+  width: 150px;
+  height: auto;
+}
+
+.managerTab{
+  margin:auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.manageProflie{
+  font-size: 20px;
+  margin-left: 3px;
+  margin-right: 7px;
 }
 
 .manageMenu{
@@ -359,4 +461,21 @@ footer{
   left: 50%;
   top:50%;
   transform: translateX(-50%);
+}
+
+.dropDown{
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropDown:hover{
+  color: #660033;
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
 }
