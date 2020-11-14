@@ -142,7 +142,7 @@ main{
 }
 
 .main_2{
-  min-height: 900px;
+  min-height: 1000px;
   align-items: center;
   background: #f2f4f7;
 }
@@ -667,7 +667,7 @@ select {
     border: 0;
     cursor: pointer;
     color: #fff;
-    background-color: #08a600;
+    background-color: #595041;
     font-size: 20px;
     font-weight: 400;
     font-family: Dotum,'돋움',Helvetica,sans-serif;
