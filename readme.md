@@ -1,7 +1,2 @@
-hello?
-
-develop
-
-hotfix
-
-release
+# Database-Hotel-WebSite
+ERICA Database Hotel Website

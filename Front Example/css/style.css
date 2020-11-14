@@ -17,6 +17,7 @@ ul{
 header{
   margin: auto;
   height: 100px;
+  width: auto;
   display: flex;
   align-items: center;
   position: relative;
@@ -90,8 +91,8 @@ header > nav{
 
 .logo{
   display: inline-block;
-  width: 150px;
-  height: 110px;
+  width: 140px;
+  height: auto;
   margin-left: auto;
   margin-top: -25px;
   margin-right: auto;
@@ -160,51 +161,27 @@ main{
 }
 
 /*메인메뉴 예약 바*/
-.bookingMainBar, .reservationBar, .paymentWayBar{
-  width: auto;
+.bookingMainBar{
+  text-align: center;
+  width: 100%;
   height: 110px;
   display: flex;
   align-items: center;
-  position: relative;
   background-color: white;
 }
 
-.bookingMainBar dl > dt{
-  display: inline-block;
-  padding: 0;
-  font-size: 12px;
-  color: #595041;
-}
-
-.bookingMainBarnu dl > dt > dd{
-  font-size: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.bookingSelect, .reservation, .paymentWay{
-  padding: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #595041;
-}
-
-.bookingSelect > dl{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.bookingSelect > dl > dd{
-  margin: auto;
-}
-
-.bookingSelect > dl > dd > a{
+td{
+  width: 200px;
   color: #d3c493;
   font-size: 10px;
+}
+
+.bookingSelect{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #595041;
+  margin: auto;
 }
 
 .searchRoom{
@@ -254,7 +231,6 @@ footer{
 
 .bottomMenu ul > li{
   display: inline-block;
-  color: #595041;
 }
 
 .bottomMenu ul > li > a{
@@ -268,9 +244,12 @@ footer{
   font-weight: bold;
 }
 
+.bottomMid{
+  height: 160px;
+}
+
 .bottomLogo{
-  width: 200px;
-  height: 157.89;
+  width: 250px;
   height: auto;
   float: left;
   margin-left: 10%;
@@ -289,23 +268,16 @@ footer{
 
 .bottomWord{
   float: right;
-  margin-top: 1%;
-  width: 33%;
-}
-
-.bottomWord > p{
-  margin-top: 5px;
-  margin: 2px 0;
-  font-size: 13px;
+  margin-top: 1.5%;
+  margin-right: 1%;
+  width: 420px;
+  height: auto;
 }
 
 .copyright{
-  width: 100%;
-  float: left;
-  position: relative;
-  font-size: 5px;
-  text-align: left;
-  bottom: 0;
+  width: 350px;
+  height: auto;
+  float: right;
 }
 
 
@@ -382,8 +354,6 @@ footer{
 
 
 /***manager***/
-/***manager***/
-
 .manage{
   position: absolute;
   top: 0;
@@ -400,16 +370,17 @@ footer{
 .hotelLogo{
   width: 150px;
   height: auto;
+  margin-top: 10px;
 }
 
 .managerTab{
-  margin:auto;
+  margin: auto auto auto 30px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .manageProflie{
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 3px;
   margin-right: 7px;
 }
@@ -480,8 +451,8 @@ footer{
       -o-transform: scale(1.1);
 }
 
-/***loginpage***/
 
+/***loginpage***/
 .welcome{
   color: #5d5d5d;
   font-weight: bold;
