@@ -141,6 +141,12 @@ main{
   background: #f2f4f7;
 }
 
+.main_2{
+  min-height: 900px;
+  align-items: center;
+  background: #f2f4f7;
+}
+
 .container{
   width: 100%;
   margin: auto;
@@ -472,7 +478,6 @@ footer{
     padding: 55px;
     text-align: center;
     border: none;
-
 }
 
 .text-field {
@@ -519,7 +524,7 @@ footer{
 /***signUppage***/
 #wrapper {
     position: relative;
-    height: 100%;
+
 }
 
 #content {
