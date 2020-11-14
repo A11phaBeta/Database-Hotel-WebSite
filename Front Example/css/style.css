@@ -479,3 +479,68 @@ footer{
      -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
 }
+
+/***loginpage***/
+
+.welcome{
+  color: #5d5d5d;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.login-form {
+    width: 400px;
+    height: 300px;
+    background-color: #EEEFF1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    padding: 55px;
+    text-align: center;
+    border: none;
+
+}
+
+.text-field {
+      font-size: 14px;
+      padding: 20px;
+      border: none;
+      width: 260px;
+      margin-bottom: 20px;
+
+}
+
+.submit-btn {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  background-color: #595041;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+.login_ID{
+  text-align: left;
+  padding-left: 50px;
+  margin-bottom: 5px;
+}
+
+.sign_up{
+  margin-left: 20px;
+}
