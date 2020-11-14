@@ -11,29 +11,144 @@
 <body>
   <!-- 상단 -->
   <header>
-    <!-- 로그인, 회원가입 -->
-    <div class="loginSign">
-      <a href="loginpage.html" class="login">로그인</a>
-      <a href="sign.html" class="sign">회원가입</a>
-    </div>
-
     <!-- 상단 메뉴 -->
-    <a href="main.html"><img src="img/logo.png" class="logo" /></a>
     <nav>
-      <div class="menu">
-        <ul>
-          <li><a style="text-align: left;" href="booking.html">예약하기</a></li>
-          <li><a href="#">호텔소개</a></li>
-          <li><a style="text-align: right;" href="#">고객문의</a></li>
-          <li><a style="text-align: right;" href="#">게시판</a></li>
-        </ul>
+      <div class = "menu">
+        <div class= "menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class = "menu2">
+          <a href="#">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo"/></a>
+        <div class = "menu3">
+          <a href="#">고객문의</a>
+        </div>
+        <div class = "menu4">
+          <a href="#">게시판</a>
+        </div>
       </div>
     </nav>
-
   </header>
-
   <!-- 메인 -->
   <main>
+    <div id="wrapper">
+      <!-- content-->
+      <div id="content">
+        <!-- ID -->
+        <div>
+          <div class="signUpTitle">회원정보입력</div>
+          <h3 class="join_title">
+            <label for="id">아이디</label>
+          </h3>
+          <span class="box int_id">
+            <input type="text" id="email" name = "email" maxlength="20" placeholder="e-mail">
+          </span>
+          <span class="error_next_box"></span>
+        </div>
+        <!-- PW1 -->
+        <div>
+          <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
+          <span class="box int_pass">
+              <input type="text" id="pswd1" class="int" maxlength="20">
+              <span id="alertTxt">사용불가</span>
+              <img src="m_icon_pass.png" id="pswd1_img1" class="pswdImg">
+          </span>
+          <span class="error_next_box"></span>
+        </div>
+        <!-- PW2 -->
+        <div>
+          <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
+          <span class="box int_pass_check">
+              <input type="text" id="pswd2" class="int" maxlength="20">
+              <img src="m_icon_check_disable.png" id="pswd2_img1" class="pswdImg">
+          </span>
+          <span class="error_next_box"></span>
+        </div>
+        <!-- NAME -->
+        <div>
+          <h3 class="join_title"><label for="name">이름</label></h3>
+          <span class="box int_name">
+              <input type="text" id="name" class="int" maxlength="20">
+          </span>
+          <span class="error_next_box"></span>
+        </div>
+        <!-- BIRTH -->
+        <div>
+          <h3 class="join_title"><label for="yy">생년월일</label></h3>
+          <div id="bir_wrap">
+            <!-- BIRTH_YY -->
+            <div id="bir_yy">
+                <span class="box">
+                    <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                </span>
+            </div>
+            <!-- BIRTH_MM -->
+            <div id="bir_mm">
+              <span class="box">
+                  <select id="mm" class="sel">
+                      <option>월</option>
+                      <option value="01">1</option>
+                      <option value="02">2</option>
+                      <option value="03">3</option>
+                      <option value="04">4</option>
+                      <option value="05">5</option>
+                      <option value="06">6</option>
+                      <option value="07">7</option>
+                      <option value="08">8</option>
+                      <option value="09">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                  </select>
+              </span>
+          </div>
+            <!-- BIRTH_DD -->
+            <div id="bir_dd">
+              <span class="box">
+              <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+              </span>
+            </div>
+          </div>
+          <span class="error_next_box"></span>
+        </div>
+        <!-- GENDER -->
+        <div>
+          <h3 class="join_title"><label for="gender">성별</label></h3>
+          <span class="box gender_code">
+            <select id="gender" class="sel">
+              <option>성별</option>
+              <option value="M">남자</option>
+                <option value="F">여자</option>
+            </select>
+          </span>
+          <span class="error_next_box">필수 정보입니다.</span>
+        </div>
+        <!-- EMAIL -->
+        <div>
+          <h3 class="join_title"><label for="email">본인확인 이메일<span class="optional">(선택)</span></label></h3>
+          <span class="box int_email">
+            <input type="text" id="email" class="int" maxlength="100" placeholder="선택입력">
+          </span>
+          <span class="error_next_box">이메일 주소를 다시 확인해주세요.</span>
+        </div>
+        <!-- MOBILE -->
+        <div>
+          <h3 class="join_title"><label for="phoneNo">휴대전화</label></h3>
+          <span class="box int_mobile">
+            <input type="tel" id="mobile" class="int" maxlength="16" placeholder="전화번호 입력">
+          </span>
+          <span class="error_next_box"></span>
+        </div>
+        <!-- JOIN BTN-->
+        <div class="btn_area">
+          <button type="button" id="btnJoin">
+            <span>가입하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  <script src="main.js"></script>
   </main>
 
   <!-- 하단 -->
@@ -45,20 +160,22 @@
         <li><a style="text-align: right;" href="#">고객문의</a></li>
         <li><a style="text-align: right;" href="#">게시판</a></li>
       </ul>
-    </div>
-    <div class="bottomMid">
       <div class="bottomLogo">
         <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="img/snsLogo.png">
       </div>
-      <div>
-        <img class="bottomWord" src="img/bottomWords.png">
+      <div class="bottomWord">
+        <p>(주)CDS 경기도 안산시 상록구 사3동 한양대학로 55 (우)15588</p>
+        <p>대표 이용현 | 연락처 010-0000-0000</p>
+        <p>이메일 00000@gmail.com | FAX 00-000-0000</p>
+        <p>사업자등록번호 000-00-00000</p>
+        <p>통신판매신고번호 중구00000호</p>
       </div>
     </div>
-    <div>
-      <img class="copyright" src="img/copyright.png">
+    <div class="copyright">
+      <a href="#">Copyright &copy; CDS(코딩소년단) Co, LTD. ALL RIGHTS RESERVED.</a>
     </div>
   </footer>
 </body>
