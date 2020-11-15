@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<!-- ***********예약자 명, 결제수단 쪽 깨져있으니 수정하기*********** -->
+
+
+
+<body>
+  <!-- 상단 -->
+  <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="loginpage.html" class="login">로그인</a>
+      <a href="signUp.html" class="sign">회원가입</a>
+    </div>
+  
+    <!-- 상단 메뉴 -->
+    <nav>
+      <div class="menu">
+        <div class="menu1">
+          <a href="roomList.html">예약하기</a>
+        </div>
+        <div class="menu2">
+          <a href="#">호텔소개</a>
+        </div>
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
+          <a href="#">고객문의</a>
+        </div>
+        <div class="menu4">
+          <a href="#">게시판</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+    <div class="Container">
+      <div class="chooseAfter">
+        <div class="bookingMainBar">
+          <div class="bookingSelect">
+            <!-- 체크인, 체크아웃, 객실, 인원 수 -->
+            <table>
+              <tr>
+                <th>체크인</th>
+                <th>체크아웃</th>
+                <th>객실</th>
+                <th>성인</th>
+                <th>어린이</th>
+              </tr>
+              <tr>
+                <td>2020.11.11</td>
+                <td>2020.11.11</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <dl>
+              <dt>
+              <dd>객실</dd>
+              </dt>
+              <dd><a>객실이름</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="reservationBar">
+        <div class="reservation">
+          <!-- 예약자명 -->
+          <dl>
+            <dt>
+            <dd>예약자명</dd>
+            </dt>
+          </dl>
+          <dl>
+            <dt>
+            <dd>홍길동</dd>
+            </dt>
+            <dd><a>클릭 시 변경가능</a></dd>
+          </dl>
+          <!-- 예약자 연락처 -->
+          <dl>
+            <dt>
+            <dd>예약자 연락처</dd>
+            </dt>
+          </dl>
+          <dl>
+            <dt>
+            <dd>010-0000-0000</dd>
+            </dt>
+            <dd><a>클릭 시 변경가능</a></dd>
+          </dl>
+          <!-- 방문 방법 -->
+          <dl>
+            <dt>
+            <dd>도보방문</dd>
+            </dt>
+            <dd><a>클릭 시 변경가능</a></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="paymentWayBar">
+        <div class="paymentWay">
+          <!-- 지불방법 -->
+          <dl>
+            <dt>
+            <dd>신용카드</dd>
+            </dt>
+          </dl>
+          <dl>
+            <dt>
+            <dd>무통장입금</dd>
+            </dt>
+          </dl>
+          <dl>
+            <dt>
+            <dd>카카오페이</dd>
+            </dt>
+          </dl>
+          <dl>
+            <dt>
+            <dd>실시간 계좌이체</dd>
+            </dt>
+          </dl>
+          <!-- 결제하기 -->
+          <a class="paymentGo" href="#">
+            <p>결제하기</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 -->
+  <footer>
+    <div class="bottomMenu">
+      <ul>
+        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
+        <li><a href="#">호텔소개</a></li>
+        <li><a style="text-align: right;" href="#">고객문의</a></li>
+        <li><a style="text-align: right;" href="#">게시판</a></li>
+      </ul>
+    </div>
+    <div class="bottomMid">
+      <div class="bottomLogo">
+        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+      </div>
+      <div>
+        <img class="snsLogo" src="img/snsLogo.png">
+      </div>
+      <div>
+        <img class="bottomWord" src="img/bottomWords.png">
+      </div>
+    </div>
+    <div>
+      <img class="copyright" src="img/copyright.png">
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+body{
+  margin: 0;
+}
+
+a, p{
+  text-decoration: none;
+  color: #595041;
+}
+
+ul{
+  list-style:none;
+}
+
+
+/*** main ***/
+/*상단*/
+header{
+  margin: auto;
+  height: 100px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #d3c493;
+}
+
+/*로그인, 회원가입*/
+.loginSign{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.login, .sign{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+/*상단 메뉴(로고, 메뉴)*/
+header > nav{
+  height: 45px;
+  position: absolute;
+  left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+
+.menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.menu1{
+  margin-left: auto;
+  margin-right: auto;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu1:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+.menu2{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu2:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+.logo{
+  display: inline-block;
+  width: 140px;
+  height: auto;
+  margin-left: auto;
+  margin-top: -25px;
+  margin-right: auto;
+}
+
+.menu3{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu3:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+.menu4{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu4:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+/*main*/
+main{
+  min-height: 700px;
+  align-items: center;
+  background: #f2f4f7;
+}
+
+.main_2{
+  min-height: 1000px;
+  align-items: center;
+  background: #f2f4f7;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  display: grid;
+}
+
+.imageSlide{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imdSld{
+  width: auto;
+  height: auto;
+  margin-left: -30px;
+}
+
+/*메인메뉴 예약 바*/
+.bookingMainBar{
+  text-align: center;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+td{
+  width: 200px;
+  color: #d3c493;
+  font-size: 10px;
+}
+
+.bookingSelect{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #595041;
+  margin: auto;
+}
+
+.searchRoom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 50px;
+  color: #595041;
+}
+
+.searchRoom > p{
+  padding: 7px 13px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #595041;
+}
+
+.searchRoom > p:hover{
+  color: white;
+  background-color: #595041;
+}
+
+/*이벤트 페이지*/
+.eventPage{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+/*하단*/
+footer{
+  height: 200px;
+  padding: 50px 20px 0px;
+  font-size: 12px;
+  background-color: #d3c493;
+}
+
+.bottomMenu ul{
+  margin: 0 10% 0 10%;
+  padding: 0;
+  text-align: center;
+}
+
+.bottomMenu ul > li{
+  display: inline-block;
+}
+
+.bottomMenu ul > li > a{
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 45px;
+}
+
+.bottomMenu ul > li > a:hover{
+  color: #4f473a;
+  font-weight: bold;
+}
+
+.bottomMid{
+  height: 160px;
+}
+
+.bottomLogo{
+  width: 250px;
+  height: auto;
+  float: left;
+  margin-left: 10%;
+  padding: 0;
+}
+
+.snsLogo{
+  position: absolute;
+  height: 99.6px;
+  width: 310px;
+  left:50%;
+  margin-top: 20px;
+  margin-left:-180px;
+  text-align:center
+}
+
+.bottomWord{
+  float: right;
+  margin-top: 1.5%;
+  margin-right: 1%;
+  width: 420px;
+  height: auto;
+}
+
+.copyright{
+  width: 350px;
+  height: auto;
+  float: right;
+}
+
+
+/***booking***/
+.bContainer{
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%);
+}
+
+
+/***payment***/
+.reservationBar dl > dt{
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  color: #595041;
+}
+
+.reservationBar dl > dt > dd{
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reservation > dl{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.reservation > dl > dd{
+  margin: auto;
+}
+
+.reservation > dl > dd > a{
+  color: #d3c493;
+  font-size: 10px;
+}
+
+.paymentWayBar dl > dt{
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  color: #595041;
+}
+
+.paymentWayBar dl > dt > dd{
+  font-size: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paymentWay > dl{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.paymentWay > dl > dd{
+  margin: auto;
+}
+
+.paymentGo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 50px;
+  color: #595041;
+}
+
+
+/***manager***/
+.manage{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.managerscreen{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.hotelLogo{
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.managerTab{
+  margin: auto auto auto 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.manageProflie{
+  font-size: 15px;
+  margin-left: 3px;
+  margin-right: 7px;
+}
+
+.manageMenu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.manageMenu nav{
+  height: 45px;
+  position: absolute;
+  top: 10; left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+
+.manageMenu ul{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.manageMenu ul > li{
+  display: inline-block;
+  margin: 0 auto;
+  color: #595041;
+}
+
+.manageMenu ul > li > a{
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.manageMenu ul > li > a:hover{
+  color: #660033;
+  font-weight: bold;
+}
+
+.mContainer{
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%);
+}
+
+.dropDown{
+  display: inline-block;
+  color: #595041;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropDown:hover{
+  color: #660033;
+  font-weight: bold;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+
+
+/***loginpage***/
+.welcome{
+  color: #5d5d5d;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.login-form {
+    width: 400px;
+    height: 300px;
+    background-color: #EEEFF1;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    padding: 55px;
+    text-align: center;
+    border: none;
+}
+
+.text-field {
+      font-size: 14px;
+      padding: 20px;
+      border: none;
+      width: 260px;
+      margin-bottom: 20px;
+
+}
+
+.submit-btn {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  background-color: #595041;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+.login_ID{
+  text-align: left;
+  padding-left: 50px;
+  margin-bottom: 5px;
+}
+
+.sign_up{
+  margin-left: 20px;
+}
+
+/***signUppage***/
+#wrapper {
+    position: relative;
+
+}
+
+#content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 460px;
+}
+
+.signUpTitle{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+h3 {
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.box {
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+
+.int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+input {
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+
+.box.int_id {
+    padding-right: 110px;
+}
+
+.box.int_pass {
+    padding-right: 40px;
+}
+
+.box.int_pass_check {
+    padding-right: 40px;
+}
+
+.pswdImg {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+#bir_wrap {
+    display: table;
+    width: 100%;
+}
+
+#bir_yy {
+    display: table-cell;
+    width: 147px;
+
+}
+
+#bir_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+#bir_dd {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm, #bir_dd {
+    padding-left: 10px;
+}
+
+select {
+    width: 100%;
+    height: 29px;
+    font-size: 15px;
+    background: #fff url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50% no-repeat;
+    background-size: 20px 8px;
+    -webkit-appearance: none;
+    display: inline-block;
+    text-align: start;
+    border: none;
+    cursor: default;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+
+/* 에러메세지 */
+
+.error_next_box {
+    margin-top: 9px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+#alertTxt {
+    position: absolute;
+    top: 19px;
+    right: 38px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+/* 버튼 */
+
+.btn_area {
+    margin: 30px 0 91px;
+}
+
+#btnJoin {
+    width: 100%;
+    padding: 21px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #595041;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
