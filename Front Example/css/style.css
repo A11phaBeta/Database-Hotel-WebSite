@@ -764,3 +764,19 @@ hr.two{
   margin-top: 10%;
   margin-left: 80%;
 }
+
+.lostpasswordfind{
+  text-align: center;
+  position: relative;
+  top:100px;
+}
+
+.lostpasswordfind1{
+  color: #5d5d5d;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.lostpassword{
+  font-size: 14px;
+}
