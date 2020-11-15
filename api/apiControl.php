@@ -11,6 +11,8 @@ switch($_SERVER['QUERY_STRING']){
     echo doLogin();
     break;
   case 'signup' :
+    require_once('./modules/user.php');
+    echo doSignUp();
     break;
 }
 
