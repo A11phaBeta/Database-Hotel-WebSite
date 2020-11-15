@@ -694,3 +694,74 @@ select {
     font-weight: 400;
     font-family: Dotum,'돋움',Helvetica,sans-serif;
 }
+
+
+/***roomList***/
+
+.rList{
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+
+hr.two{
+  width : 90%;
+  color : #595041;
+  text-align : left;
+  margin-left : 0px;
+}
+
+.roomList{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.room_img{
+  width: 300px;
+  height: auto;
+  float: left;
+  margin-right: 2%
+}
+
+.roomtitle{
+  float: left;
+  margin-top: 2%;
+}
+
+.roommaintitle{
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+}
+
+.btn_area2{
+  width: 100px;
+  float: right;
+  margin-right: 2%;
+  margin-top: 4%
+}
+
+.room_price{
+  float: right;
+  margin-right: 2%;
+  margin-top: 3.5%
+}
+
+.roomsubtitle{
+  font-size: 14px;
+  float: left;
+  margin-top: 5%;
+}
+
+.room_price1{
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+}
+
+.roomdate{
+  margin-top: 10%;
+  margin-left: 80%;
+}
