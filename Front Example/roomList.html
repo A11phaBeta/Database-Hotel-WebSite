@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
       <a href="loginpage.html" class="login">로그인</a>
       <a href="signUp.html" class="sign">회원가입</a>
     </div>
-  
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
@@ -44,22 +42,98 @@
       <div class="bookingMainBar">
         <div class="bookingSelect">
           <!-- 체크인, 체크아웃, 객실, 인원 수 -->
-          <table>
-            <tr>
-              <th>체크인</th>
-              <th>체크아웃</th>
-              <th>객실</th>
-              <th>성인</th>
-              <th>어린이</th>
-            </tr>
-            <tr>
-              <td>Check In Date</td>
-              <td>Check Out Date</td>
-              <td>n</td>
-              <td>n</td>
-              <td>n</td>
-            </tr>
-          </table>
+          <form>
+            <table>
+              <tr>
+                <th>체크인</th>
+                <th>체크아웃</th>
+                <th>객실</th>
+                <th>성인</th>
+                <th>어린이</th>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <div>
+                          <input type="date" id="currnetDate" class="date" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <div>
+                          <input type="date" id="currnetDate1" class="date" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="numnum">
+                    <tr>
+                      <td>
+                        <div>
+                          <img src="img/cntDown.png" alt="" width="10" height="10" class="countDown" />
+                        </div>
+                      </td>
+                      <td>
+                        <input type="text" name="num" value="0" id="" class="num" />
+                      </td>
+                      <td>
+                        <div>
+                          <img src="img/cntUp.png" alt="" width="10" height="10" class="countUp" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="numnum">
+                    <tr>
+                      <td>
+                        <div>
+                          <img src="img/cntDown.png" alt="" width="10" height="10" class="countDown" />
+                        </div>
+                      </td>
+                      <td>
+                        <input type="text" name="num" value="0" id="" class="num" />
+                      </td>
+                      <td>
+                        <div>
+                          <img src="img/cntUp.png" alt="" width="10" height="10" class="countUp" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="numnum">
+                    <tr>
+                      <td>
+                        <div>
+                          <img src="img/cntDown.png" alt="" width="10" height="10" class="countDown" />
+                        </div>
+                      </td>
+                      <td>
+                        <input type="text" name="num" value="0" id="" class="num" />
+                      </td>
+                      <td>
+                        <div>
+                          <img src="img/cntUp.png" alt="" width="10" height="10" class="countUp" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </form>
           <!-- 방 검색 -->
           <a class="searchRoom" href="roomList.html">
             <p>search</p>
@@ -73,6 +147,7 @@
           <p>예약하기</p>
         </a>
       </div>
+    </div>
   </main>
 
   <!-- 하단 -->
@@ -100,6 +175,6 @@
       <img class="copyright" src="img/copyright.png">
     </div>
   </footer>
+  <script src="js/mainBookingBar.js"></script>
 </body>
-
 </html>

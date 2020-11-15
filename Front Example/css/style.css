@@ -178,8 +178,31 @@ main{
 
 td{
   width: 200px;
-  color: #d3c493;
-  font-size: 10px;
+}
+
+.countDown{
+  cursor: pointer;
+}
+
+.countUp{
+  cursor: pointer;
+}
+
+.date{
+  border: none;
+  color: #595041;
+}
+
+.numnum{
+  margin: auto;
+  width: 120px;
+}
+
+.num{
+  text-align: center;
+  border: none;
+  width: 10px;
+  color: #595041;
 }
 
 .bookingSelect{

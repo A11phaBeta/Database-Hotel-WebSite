@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -18,18 +20,18 @@
 
     <!-- 상단 메뉴 -->
     <nav>
-      <div class = "menu">
-        <div class= "menu1">
+      <div class="menu">
+        <div class="menu1">
           <a href="roomList.html">예약하기</a>
         </div>
-        <div class = "menu2">
+        <div class="menu2">
           <a href="#">호텔소개</a>
         </div>
-        <a href="main.html"><img src="img/logo.png" class="logo"/></a>
-        <div class = "menu3">
+        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <div class="menu3">
           <a href="#">고객문의</a>
         </div>
-        <div class = "menu4">
+        <div class="menu4">
           <a href="#">게시판</a>
         </div>
       </div>
@@ -40,28 +42,104 @@
   <main>
     <div class="container">
       <div class="imageSlide">
-        <img src="img/imageSlide.jpg" class="imgSld"/>
+        <img src="img/imageSlide.jpg" class="imgSld" />
       </div>
       <!-- 메인메뉴 예약 바-->
       <div class="bookingMainBar">
         <div class="bookingSelect">
-          <!-- 체크인 -->
-          <table>
-            <tr>
-              <th>체크인</th>
-              <th>체크아웃</th>
-              <th>객실</th>
-              <th>성인</th>
-              <th>어린이</th>
-            </tr>
-            <tr>
-              <td>Check In Date</td>
-              <td>Check Out Date</td>
-              <td>n</td>
-              <td>n</td>
-              <td>n</td>
-            </tr>
-          </table>
+          <!-- 체크인, 체크아웃, 객실, 인원 수 -->
+          <form>
+            <table>
+              <tr>
+                <th>체크인</th>
+                <th>체크아웃</th>
+                <th>객실</th>
+                <th>성인</th>
+                <th>어린이</th>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <div>
+                          <input type="date" id="currnetDate" class="date"/>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <div>
+                          <input type="date" id="currnetDate1" class="date"/>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="numnum">
+                    <tr>
+                      <td>
+                        <div>
+                          <img src="img/cntDown.png" alt="" width="10" height="10" class="countDown" />
+                        </div>
+                      </td>
+                      <td>
+                        <input type="text" name="num" value="0" id="" class="num" />
+                      </td>
+                      <td>
+                        <div>
+                          <img src="img/cntUp.png" alt="" width="10" height="10" class="countUp" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="numnum">
+                    <tr>
+                      <td>
+                        <div>
+                          <img src="img/cntDown.png" alt="" width="10" height="10" class="countDown" />
+                        </div>
+                      </td>
+                      <td>
+                        <input type="text" name="num" value="0" id="" class="num" />
+                      </td>
+                      <td>
+                        <div>
+                          <img src="img/cntUp.png" alt="" width="10" height="10" class="countUp" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="numnum">
+                    <tr>
+                      <td>
+                        <div>
+                          <img src="img/cntDown.png" alt="" width="10" height="10" class="countDown" />
+                        </div>
+                      </td>
+                      <td>
+                        <input type="text" name="num" value="0" id="" class="num" />
+                      </td>
+                      <td>
+                        <div>
+                          <img src="img/cntUp.png" alt="" width="10" height="10" class="countUp" />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </form>
           <!-- 방 검색 -->
           <a class="searchRoom" href="roomList.html">
             <p>search</p>
@@ -70,13 +148,13 @@
       </div>
       <!-- 행사 이미지 -->
       <div class="eventPage">
-        <img src="img/image1.jpg" class="imgSld"/>
+        <img src="img/image1.jpg" class="imgSld" />
       </div>
       <div class="eventPage">
-        <img src="img/image2.jpg" class="imgSld"/>
+        <img src="img/image2.jpg" class="imgSld" />
       </div>
       <div class="eventPage">
-        <img src="img/image3.jpg" class="imgSld"/>
+        <img src="img/image3.jpg" class="imgSld" />
       </div>
     </div>
   </main>
@@ -106,5 +184,6 @@
       <img class="copyright" src="img/copyright.png">
     </div>
   </footer>
+  <script src="js/mainBookingBar.js"></script>
 </body>
 </html>
