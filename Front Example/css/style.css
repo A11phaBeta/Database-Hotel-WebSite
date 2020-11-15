@@ -491,24 +491,23 @@ footer{
 }
 
 .login-form {
-    width: 400px;
-    height: 300px;
-    background-color: #EEEFF1;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 150px;
-    padding: 55px;
-    text-align: center;
-    border: none;
+  width: 400px;
+  height: 300px;
+  background-color: #EEEFF1;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 150px;
+  padding: 55px;
+  text-align: center;
+  border: none;
 }
 
 .text-field {
-      font-size: 14px;
-      padding: 20px;
-      border: none;
-      width: 260px;
-      margin-bottom: 20px;
-
+  font-size: 14px;
+  padding: 20px;
+  border: none;
+  width: 260px;
+  margin-bottom: 20px;
 }
 
 .submit-btn {
@@ -518,14 +517,14 @@ footer{
   width: 300px;
   height: 50px;
   background-color: #595041;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   color: white;
   cursor: pointer;
 }
 
 .links {
-    text-align: center;
+  text-align: center;
 }
 
 .links a {

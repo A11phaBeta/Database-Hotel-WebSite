@@ -12,6 +12,7 @@ $(function () {
     }
     num = $(".num:eq(" + n + ")").val(num * 1 - 1);
   });
+  
   $('.countUp').click(function () {
     var n = $('.countUp').index(this);
     var num = $(".num:eq(" + n + ")").val();

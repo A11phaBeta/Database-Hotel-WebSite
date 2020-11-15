@@ -4,13 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인</title>
+  <title>Hotel</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
   <!-- 상단 -->
   <header>
+    <!-- 로그인, 회원가입 -->
+    <div class="loginSign">
+      <a href="loginpage.html" class="login">로그인</a>
+      <a href="signUp.html" class="sign">회원가입</a>
+    </div>
+
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
@@ -30,24 +37,11 @@
       </div>
     </nav>
   </header>
+
   <!-- 메인 -->
   <main>
-    <div class="welcome">
-      저희 소프트호텔에 오신 것을 환영합니다.
-    </div>
-    <div class="login-form">
-      <form>
-        <div class="login_ID">아이디</div>
-        <input type="text" name="email" class="text-field" placeholder="e-mail">
-        <div class="login_ID">비밀번호</div>
-        <input type="password" name="password" class="text-field" placeholder="password">
-        <input type="submit" value="로그인" class="submit-btn">
-      </form>
-
-      <div class="links">
-        <a href="lostpassword.html">비밀번호를 잊어버리셨나요?</a>
-        <a href="signUp.html" class="sign_up">회원가입</a>
-      </div>
+    <div class="container">
+      
     </div>
   </main>
 
@@ -76,6 +70,7 @@
       <img class="copyright" src="img/copyright.png">
     </div>
   </footer>
+  <script src="js/mainBookingBar.js"></script>
 </body>
 
 </html>
