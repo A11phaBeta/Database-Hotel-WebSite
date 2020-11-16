@@ -1,3 +1,8 @@
+/*** coutomerService ***/
+function btn_js_click() {
+    alert("문의가 신청되었습니다.");
+    document.location.href = "main.html";
+}
 
 
 

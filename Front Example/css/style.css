@@ -553,14 +553,15 @@ footer{
   left: 50%;
   transform: translate(-50%);
   width: 460px;
+  color: #4f473a;
 }
 
 .signUpTitle{
-text-align: center;
-font-size: 40px;
-font-weight: bolder;
-margin-top: 20px;
-margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -680,11 +681,12 @@ select {
 
 #btnJoin {
   width: 100%;
+  margin-bottom: 50px;
   padding: 21px 0 17px;
   border: 0;
   cursor: pointer;
   color: #fff;
-  background-color: #595041;
+  background-color: #4f473a;
   font-size: 20px;
   font-weight: 400;
   font-family: Dotum,'돋움',Helvetica,sans-serif;
@@ -899,13 +901,13 @@ hr.two{
   font-size: 12px;
 }
 
-/***booking.html***/
+
+/***booking***/
 .main_3{
   min-height: 1300px;
   align-items: center;
   background: #f2f4f7;
 }
-
 
 .list_page{
   font-size: 16px;
@@ -913,13 +915,15 @@ hr.two{
   top : 20px;
   left : 30px;
   margin-bottom: 5%;
+  color: #4f473a;
 }
 
 .list_page_left{
   float: left;
   width: 50%;
-  border-right: 1px solid black;
+  border-right: 1px solid #4f473a;
   margin-bottom: 3%;
+  color: #4f473a;
 }
 
 .room_img_2{
@@ -960,6 +964,7 @@ hr.two{
 
 .list_page_right{
   float: left;
+  color: #4f473a;
 }
 
 hr.three{
@@ -1047,9 +1052,10 @@ hr.three{
   margin-top: 10%;
   margin-left: 5%;
 }
+
 .booking_privacy_checklist{
   font-size: 14px;
-  color:black;
+  color: #4f473a;
 }
 
 .booking_look_privacy{
@@ -1067,10 +1073,110 @@ hr.three{
   margin: auto;
 }
 
-.booking_bottom{
 
+/***customerService****/
+.cs{
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 20px;
 }
 
-.booking_bottom_bar{
+.qna{
+  margin: auto;
+  margin-bottom: 10%;
+  padding-top: 25px;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 40%;
+  background-color: white;
+  color : #595041;
+}
 
+.info{
+  font-size: 17px;
+}
+
+.infoLine{
+  width : 100%;
+  color : #595041;
+  text-align : left;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.infoName{
+  margin-left: 10%;
+}
+
+.infoName > h3{
+  font-size: 15px;
+}
+
+.txt{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border-style: 0.5px solid;
+  width: 70%;
+  height: 35px;
+  color: #4f473a;
+}
+
+.txtt{
+  margin-top: 2%;
+  margin-bottom: 15%;
+  border-style: 0.5px solid;
+  width: 70%;
+  height: 35px;
+  color: #4f473a;
+}
+
+.infoTxt{
+  margin-top: 2%;
+  margin-bottom: 15%;
+  border-style: 0.5px solid;
+  width: 80%;
+  height: 100px;
+  color: #4f473a;
+}
+
+.cs_privacy{
+  margin-bottom: 10%;
+  font-size: 15px;
+  margin-left: 5%;
+}
+
+.cs_privacy_checklist{
+  font-size: 12px;
+  color:#4f473a;
+}
+
+.cs_qnaBtn{
+  margin: auto;
+  align-items: center;
+}
+
+#qnaBtn1{
+  width: 20%;
+  margin-left: 25%;
+  margin-bottom: 50px;
+  padding: 15px 0 15px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4f473a;
+  font-size: 15px;
+}
+
+#qnaBtn2{
+  width: 20%;
+  margin-right: 25%;
+  margin-bottom: 50px;
+  padding: 15px 0 15px;
+  border: 0;
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4f473a;
+  font-size: 15px;
 }
