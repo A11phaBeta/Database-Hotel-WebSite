@@ -898,3 +898,179 @@ hr.two{
   margin-bottom: 5px;
   font-size: 12px;
 }
+
+/***booking.html***/
+.main_3{
+  min-height: 1300px;
+  align-items: center;
+  background: #f2f4f7;
+}
+
+
+.list_page{
+  font-size: 16px;
+  position: relative;
+  top : 20px;
+  left : 30px;
+  margin-bottom: 5%;
+}
+
+.list_page_left{
+  float: left;
+  width: 50%;
+  border-right: 1px solid black;
+  margin-bottom: 3%;
+}
+
+.room_img_2{
+  margin-left: 20%;
+  width: 400px;
+  height: auto;
+}
+
+.room_title{
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.room_title2{
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.room_people{
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.checkin_checkout{
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.room_price2{
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.list_page_right{
+  float: left;
+}
+
+hr.three{
+  width : 90%;
+  color : #595041;
+  text-align : left;
+  margin-left : 0px;
+}
+
+.room_totalprice{
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.price34{
+  font-size: 30px;
+  margin-left: 30%;
+}
+
+.list_page_right{
+  float: left;
+  width: 49%;
+}
+
+.booking_information{
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+.booking_name{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.booking_email{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.booking_phonenumber{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+
+.booking_creditinformation{
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.booking_creditinformation2{
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.selectbox_card{
+  width: 150px;
+  height: 30px;
+  margin-top: 2%;
+}
+
+.booking_creditnumber{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.moveNumber {
+	text-align:center;
+	width:40px;
+}
+
+.validThru {
+  text-align:center;
+  width:60px;
+}
+
+.booking_privacy{
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.booking_privacy_checklist{
+  font-size: 14px;
+  color:black;
+}
+
+.booking_look_privacy{
+  font-size: 12px;
+}
+
+.booking_cancel{
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.btn_area3{
+  width: 100px;
+  margin: auto;
+}
+
+.booking_bottom{
+
+}
+
+.booking_bottom_bar{
+
+}
