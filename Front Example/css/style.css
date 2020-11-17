@@ -1180,3 +1180,136 @@ hr.three{
   background-color: #4f473a;
   font-size: 15px;
 }
+
+.notice_table{
+   width:1170px;
+   border-collapse:collapse;
+   border-top:2px solid #8d8d8d;
+   margin-left: 10%;
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
+
+.notice_th{
+   padding:10px 8px;
+   background:#f9f9f9;
+   color:#666;
+   border-bottom:1px solid #8d8d8d;
+}
+
+.notice_td1{
+  padding:10px 8px;
+  text-align:center;
+  line-height:1.25em;
+  color:#666;
+  border-bottom:1px solid #8d8d8d;
+  cursor: pointer;
+}
+
+.notice_td{
+   padding:10px 8px;
+   text-align:center;
+   line-height:1.25em;
+   color:#666;
+   border-bottom:1px solid #8d8d8d;
+}
+
+.notice_search{
+  border: 1px solid #d8d8d8;
+  padding: 26px 0;
+  background: #f6f7f9;
+  position: relative;
+  text-align: center;
+  width: 1170px;
+  margin-left: 10%;
+}
+
+
+.notice_searchimg{
+  width: 25px;
+  height: 26px;
+  vertical-align: middle;
+}
+
+.notice_search select{
+  border: 1px solid #d8d8d8;
+  height: 27px;
+  line-height: 27px;
+}
+
+.notice_option{
+  padding-left: 10px;
+  font-family: "Dotum";
+  font-size: 13px;
+  color: #5f6672;
+  height: 50px;
+}
+
+.notice_search input{
+  margin-left: 9px;
+  border: 1px solid #d8d8d8;
+  padding: 0 0 0 10px;
+  width: 300px;
+  height: 25px;
+  background: #fff;
+  margin-right: -5px;
+}
+
+.notice_option {
+    margin-left: 9px;
+    width: 100px;
+}
+
+.notice_number{
+  width: 100%;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+}
+
+.notice_pre_preimg{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border: 1px solid #F5DA81;
+}
+
+.notice_preimg{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border: 1px solid #F5DA81;
+}
+
+.notice_nextimg{
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid #F5DA81;
+}
+
+.notice_next_nextimg{
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid #F5DA81;
+}
+
+.notice_pagenumber{
+  font-size: 25px;
+  padding: 10px 6px;
+  color: #black;
+  vertical-align: top;
+}
+
+.notice_button{
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.notice_button2{
+  margin-left: 84%;
+  margin-bottom: 5%;
+}
