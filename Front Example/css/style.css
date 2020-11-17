@@ -702,10 +702,10 @@ select {
 }
 
 hr.two{
-  width : 90%;
+  width : 89%;
   color : #595041;
   text-align : left;
-  margin-left : 0px;
+  margin-left : 0;
 }
 
 .roomList{
@@ -1182,7 +1182,7 @@ hr.three{
 }
 
 .notice_table{
-   width:1170px;
+   width:80%;
    border-collapse:collapse;
    border-top:2px solid #8d8d8d;
    margin-left: 10%;
@@ -1220,7 +1220,7 @@ hr.three{
   background: #f6f7f9;
   position: relative;
   text-align: center;
-  width: 1170px;
+  width: 80%;
   margin-left: 10%;
 }
 
