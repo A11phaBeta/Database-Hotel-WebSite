@@ -1181,6 +1181,8 @@ hr.three{
   font-size: 15px;
 }
 
+/***notice.html***/
+
 .notice_table{
    width:80%;
    border-collapse:collapse;
@@ -1310,6 +1312,36 @@ hr.three{
 }
 
 .notice_button2{
-  margin-left: 84%;
+  margin-left: 83%;
   margin-bottom: 5%;
+}
+
+/***noticewrite.html***/
+
+.noticewrite_table{
+  margin-left: 30%;
+}
+
+.table2{
+  margin-left: 20%;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+}
+
+.table2 tr {
+  width: 50px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.table2 td {
+ width: 100px;
+ padding: 10px;
+ border-bottom: 1px solid #ccc;
+ color: #4f473a;
+}
+
+.noticewrite_write{
+  margin-top: 3%;
+  text-align: center;
 }
