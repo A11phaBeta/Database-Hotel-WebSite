@@ -1301,11 +1301,14 @@ hr.three{
 .notice_pagenumber{
   font-size: 25px;
   padding: 10px 6px;
-  color: #black;
+  color: #4f473a;
   vertical-align: top;
 }
 
 .notice_button{
+  background-color: #4f473a;
+  color: white;
+  border: none;
   width: 100px;
   height: 30px;
   cursor: pointer;
@@ -1316,8 +1319,8 @@ hr.three{
   margin-bottom: 5%;
 }
 
-/***noticewrite.html***/
 
+/***noticewrite.html***/
 .noticewrite_table{
   margin-left: 30%;
 }

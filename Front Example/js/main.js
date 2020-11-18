@@ -1,7 +1,12 @@
 /*** coutomerService ***/
 function btn_js_click() {
-    alert("문의가 신청되었습니다.");
+    alert("문의가 접수되었습니다.");
     document.location.href = "main.html";
+}
+
+function btn_js_click2() {
+    alert("문의가 접수되었습니다.");
+    document.location.href = "../login/mainLogin.html";
 }
 
 
