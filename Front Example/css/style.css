@@ -1141,9 +1141,14 @@ hr.three{
 }
 
 .cs_privacy{
-  margin-bottom: 10%;
   font-size: 15px;
-  margin-left: 5%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+.cschk{
+  margin-left: 10%;
+  margin-bottom: 10%;
 }
 
 .cs_privacy_checklist{
@@ -1180,7 +1185,6 @@ hr.three{
   background-color: #4f473a;
   font-size: 15px;
 }
-
 /***notice.html***/
 
 .notice_table{
@@ -1347,4 +1351,118 @@ hr.three{
 .noticewrite_write{
   margin-top: 3%;
   text-align: center;
+}
+
+/***mypage_membership.html***/
+
+.mypage_content{
+  width: 20%;
+  height: 90%;
+  border: 1px solid black;
+  margin-left: 5%;
+  margin-top: 6%;
+}
+
+.mypage_content_title{
+  margin-left: 3%;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+hr.three{
+  width : 90%;
+  background-color : black;
+  text-align : left;
+  margin-left : 3%;
+  border: 0;
+  height: 3px;
+  margin-top: -1px;
+}
+
+.mypage_content_membership{
+  width: 85%;
+  margin-left: 3%;
+  background-color: #FAF4C0;
+  margin-top: 10%;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mypage_content_membership_1{
+  float: right;
+}
+
+.mypage_content_reservation{
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mypage_content_coupon{
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mypage_content_privacy{
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+hr.four{
+  width : 70%;
+  background-color : black;
+  text-align : left;
+  margin-left : 9%;
+  border-top: 1px dashed #bbb;
+  margin-top: -1px;
+}
+
+.mypage_content_privacy_1{
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mypage_content_privacy_2{
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mypage_content_privacy_3{
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mypage_content_service{
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
