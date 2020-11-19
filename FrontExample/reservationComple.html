@@ -6,13 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
-
-
-
-<!-- ***********예약자 명, 결제수단 쪽 깨져있으니 수정하기*********** -->
-
-
 
 <body>
   <!-- 상단 -->
@@ -45,98 +40,49 @@
 
   <!-- 메인 -->
   <main>
-    <div class="Container">
-      <div class="chooseAfter">
-        <div class="bookingMainBar">
-          <div class="bookingSelect">
-            <!-- 체크인, 체크아웃, 객실, 인원 수 -->
-            <table>
-              <tr>
-                <th>체크인</th>
-                <th>체크아웃</th>
-                <th>객실</th>
-                <th>성인</th>
-                <th>어린이</th>
-              </tr>
-              <tr>
-                <td>2020.11.11</td>
-                <td>2020.11.11</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-              </tr>
-            </table>
-            <dl>
-              <dt>
-              <dd>객실</dd>
-              </dt>
-              <dd><a>객실이름</a></dd>
-            </dl>
+    <div class="container">
+      <div class="completed">
+        <div class="com1">
+          <div class="comName">
+            <p>000 고객님</p>
           </div>
+          <a class="printt"><input type="button" value="인쇄하기" id="print" onclick="window.print()" /></a>
+        </div>
+        <div class="comp2">
+          <p>예약이 완료되었습니다</p>
+        </div>
+        <div>
+          <p>예약하신 내용이 예약 시 입력하신 이메일로 발송되었습니다.</p>
+          <p>예약 번호를 메모해두시면 빠르고 편리하게 예약을 확인하실 수 있습니다.</p>
+          <p>현재 보유하신 리워즈 포인트는 10 P 입니다.</p>
         </div>
       </div>
-      <div class="reservationBar">
-        <div class="reservation">
-          <!-- 예약자명 -->
-          <dl>
-            <dt>
-            <dd>예약자명</dd>
-            </dt>
-          </dl>
-          <dl>
-            <dt>
-            <dd>홍길동</dd>
-            </dt>
-            <dd><a>클릭 시 변경가능</a></dd>
-          </dl>
-          <!-- 예약자 연락처 -->
-          <dl>
-            <dt>
-            <dd>예약자 연락처</dd>
-            </dt>
-          </dl>
-          <dl>
-            <dt>
-            <dd>010-0000-0000</dd>
-            </dt>
-            <dd><a>클릭 시 변경가능</a></dd>
-          </dl>
-          <!-- 방문 방법 -->
-          <dl>
-            <dt>
-            <dd>도보방문</dd>
-            </dt>
-            <dd><a>클릭 시 변경가능</a></dd>
-          </dl>
+      <div class="completed2">
+        <div class="check1">
+          <h1>날짜 / 투숙 인원</h1>
+          <li><a>체크인</a></li>
+          <li><a>체크아웃</a></li>
+          <li><a>숙박일 수</a></li>
+          <li><a>객실 수</a></li>
+          <li><a>투숙 인원</a></li>
         </div>
-      </div>
-      <div class="paymentWayBar">
-        <div class="paymentWay">
-          <!-- 지불방법 -->
-          <dl>
-            <dt>
-            <dd>신용카드</dd>
-            </dt>
-          </dl>
-          <dl>
-            <dt>
-            <dd>무통장입금</dd>
-            </dt>
-          </dl>
-          <dl>
-            <dt>
-            <dd>카카오페이</dd>
-            </dt>
-          </dl>
-          <dl>
-            <dt>
-            <dd>실시간 계좌이체</dd>
-            </dt>
-          </dl>
-          <!-- 결제하기 -->
-          <a class="paymentGo" href="#">
-            <p>결제하기</p>
-          </a>
+        <div class="check2">
+          <h1>객실</h1>
+          <li><a>패키지</a></li>
+          <li><a>객실</a></li>
+          <li><a>침대 타입</a></li>
+          <li><a>객실 요금</a></li>
+          <li><a>세금</a></li>
+        </div>
+        <div class="check3">
+          <h1>기타</h1>
+          <li><a>요청사항</a></li>
+          <form></form>
+          <div class="money">
+            <p>요금합계</p>
+            <p>500,000원</p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -167,6 +113,7 @@
       <img class="copyright" src="img/copyright.png">
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
