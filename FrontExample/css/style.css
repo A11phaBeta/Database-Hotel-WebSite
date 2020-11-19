@@ -319,67 +319,125 @@ footer{
 }
 
 
-/***payment***/
-.reservationBar dl > dt{
-  display: inline-block;
+/***reservationComple***/
+
+.completed{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-size: 20px;
+  border: 5px solid #4f473a;
+  background-color: white;
+}
+
+.comName{
+  margin: 5%;
+  float: left;
   padding: 0;
-  font-size: 12px;
-  color: #595041;
 }
 
-.reservationBar dl > dt > dd{
-  font-size: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.reservation > dl{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.reservation > dl > dd{
+.comName > p{
   margin: auto;
-}
-
-.reservation > dl > dd > a{
-  color: #d3c493;
-  font-size: 10px;
-}
-
-.paymentWayBar dl > dt{
-  display: inline-block;
-  padding: 0;
-  font-size: 12px;
-  color: #595041;
-}
-
-.paymentWayBar dl > dt > dd{
-  font-size: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.paymentWay > dl{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.paymentWay > dl > dd{
-  margin: auto;
-}
-
-.paymentGo{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 15px;
-  cursor: pointer;
-  margin-right: auto;
-  margin-left: 50px;
-  color: #595041;
 }
 
+.printt{
+  float: right;
+  margin: 3%;
+}
+
+#print{
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #4f473a;
+}
+
+.comp2{
+  float: left;
+  margin-left: 5%;
+}
+
+
+
+
+.completed2{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 20px;
+  border-top: 1px solid #ba9f48;
+  border-bottom: 1px solid #ba9f48;
+}
+
+.check1{
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.check1 > h1{
+  color: #4f473a;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.check1 > li{
+  list-style: none;
+  font-size: 15px;
+  margin: 2% 4%;
+}
+
+.check2{
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.check2 > h1{
+  color: #4f473a;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.check2 > li{
+  list-style: none;
+  font-size: 15px;
+  margin: 2% 4%;
+}
+
+.check3{
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.check3 > h1{
+  color: #4f473a;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.check3 > li{
+  list-style: none;
+  font-size: 15px;
+  margin: 2% 4%;
+}
+
+.money{
+  background-color: #d3c493  ;
+}
+
+.money > p{
+  margin: 0;
+}
 
 /***manager***/
 .manage{
