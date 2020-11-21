@@ -320,7 +320,6 @@ footer{
 
 
 /***reservationComple***/
-
 .completed{
   margin-left: 10%;
   margin-right: 10%;
@@ -331,24 +330,21 @@ footer{
   background-color: white;
 }
 
-.comName{
-  margin: 5%;
-  float: left;
-  padding: 0;
-}
-
-.comName > p{
-  margin: auto;
+.comp1{
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-right: 0;
+  width: 100px;
   font-size: 15px;
 }
 
-.printt{
-  float: right;
-  margin: 3%;
+.comp1 > p{
+  margin: 0;
 }
 
 #print{
-  float: left;
+  float: right;
+  margin-right: 5%;
   padding: 10px;
   cursor: pointer;
   border: none;
@@ -361,14 +357,19 @@ footer{
   margin-left: 5%;
 }
 
+.comp2 > h2{
+  color: #4f473a;
+}
 
-
+.comp2 > p{
+  margin-bottom: 8%;
+}
 
 .completed2{
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   font-size: 20px;
   border-top: 1px solid #ba9f48;
   border-bottom: 1px solid #ba9f48;
@@ -378,6 +379,7 @@ footer{
   width: 30%;
   float: left;
   box-sizing: border-box;
+  margin-bottom: 1%;
 }
 
 .check1 > h1{
@@ -387,10 +389,29 @@ footer{
   margin-bottom: 4%;
 }
 
-.check1 > li{
+.chk1{
+  width: 50%;
+  float: left;
+  margin: auto;
+}
+
+.chk1 > li{
   list-style: none;
   font-size: 15px;
-  margin: 2% 4%;
+  margin: 5px 15px;
+  color: #4f473a;
+}
+
+.chk2{
+  width: 50%;
+  float: left;
+}
+
+.chk2 > li{
+  list-style: none;
+  font-size: 15px;
+  margin: 5px 10px;
+  color: #4f473a;
 }
 
 .check2{
@@ -432,12 +453,21 @@ footer{
 }
 
 .money{
-  background-color: #d3c493  ;
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #d3c493;
+  font-weight: bold;
 }
 
 .money > p{
   margin: 0;
 }
+
 
 /***manager***/
 .manage{
@@ -654,7 +684,7 @@ input {
 }
 
 .box.int_id {
-      padding-right: 110px;
+  padding-right: 110px;
 }
 
 .box.int_pass {
@@ -1243,8 +1273,9 @@ hr.three{
   background-color: #4f473a;
   font-size: 15px;
 }
-/***notice.html***/
 
+
+/***notice.html***/
 .notice_table{
    width:80%;
    border-collapse:collapse;
@@ -1411,15 +1442,15 @@ hr.three{
   text-align: center;
 }
 
-/***mypage_membership.html***/
 
+/***mypage_membership.html***/
 .mypage_content{
   width: 15%;
-  height: 90%;
+  height: 500px;
   margin-left: 10%;
   margin-top: 5%;
   color: #4f473a;
-  background-color: #d3c493;
+  border: 5px solid #4f473a;
 }
 
 .mypage_content_title{
@@ -1443,10 +1474,10 @@ hr.three{
 .mypage_content_membership{
   width: 85%;
   margin-left: 3%;
-  background-color: RGB(79, 71, 58, 0.35);
   margin-top: 10%;
   font-size: 15px;
   padding-left: 10%;
+  padding-right: -10%;
   padding-top: 2%;
   padding-bottom: 2%;
   font-weight: bold;
@@ -1484,10 +1515,10 @@ hr.three{
   margin-top: 10%;
   font-size: 15px;
   padding-left: 10%;
+  padding-right: -10%;
   padding-top: 2%;
   padding-bottom: 2%;
   font-weight: bold;
-  background-color: RGB(79, 71, 58, 0.35);
 }
 
 .mypage_content_coupon{
@@ -1505,10 +1536,10 @@ hr.three{
   margin-top: 10%;
   font-size: 15px;
   padding-left: 10%;
+  padding-right: -10%;
   padding-top: 2%;
   padding-bottom: 2%;
   font-weight: bold;
-  background-color: RGB(79, 71, 58, 0.35);
 }
 
 .mypage_content_privacy{
@@ -1536,10 +1567,10 @@ hr.three{
   margin-top: 10%;
   font-size: 15px;
   padding-left: 10%;
+  padding-right: -10%;
   padding-top: 2%;
   padding-bottom: 2%;
   font-weight: bold;
-  background-color: RGB(79, 71, 58, 0.35);
 }
 
 hr.four{
@@ -1594,17 +1625,20 @@ hr.four{
 .mypage_header{
   position: absolute;
   right : 100px;
+  font-size: 12px;
+  color: #4f473a;
 }
 
 .mypage_main_title{
   margin-top: 6%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+  color: #4f473a;
 }
 
 hr.five{
   width : 90%;
-  background-color : black;
+  background-color: #4f473a;
   text-align : left;
   margin-left: 0;
   border: 0;
@@ -1614,25 +1648,27 @@ hr.five{
 .mypage_main_information{
   margin-top: 2%;
   margin-bottom: 5%;
-  font-size: 10px;
+  font-size: 15px;
+  color: #4f473a;
 }
 
 .mypage_main_table1{
-  border: 1px solid black;
+  border: 1px solid #4f473a;
   width: 90%;
-  height: 14%;
+  height: 10%;
   margin-bottom: 5%;
   text-align: center;
+  color: #4f473a;
 }
 
 .mypage_main_table1 th{
   font-size: 20px;
-  padding-top: 2%;
 }
 
 .mypage_membership_title2{
-  font-size: 25px;
   margin-top: 10%;
+  font-size: 23px;
+  color: #4f473a;
 }
 
 .mypage_main_button1{
@@ -1643,66 +1679,71 @@ hr.five{
 }
 
 .mypage_main_table2{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 3px solid #4f473a;
+  border-bottom: 3px solid #4f473a;
   width: 90%;
   height: 14%;
   margin-top: 3%;
   margin-bottom: 5%;
   text-align: center;
+  color: #4f473a;
 }
 
 .mypage_main_table2 th{
-  padding-top: 2%;
   font-size: 20px;
 }
 
 .mypage_membership_title3{
-  font-size: 25px;
+  font-size: 23px;
   margin-top: 10%;
+  color: #4f473a;
 }
 
 .mypage_main_table3{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 3px solid #4f473a;
+  border-bottom: 3px solid #4f473a;
   width: 90%;
   height: 14%;
   margin-top: 3%;
   margin-bottom: 5%;
   text-align: center;
+  color: #4f473a;
 }
 
 .mypage_main_table3 th{
-  padding-top: 2%;
   font-size: 20px;
 }
 
 .mypage_reservation_title{
-  font-size: 30px;
+  font-size: 23px;
   text-align: center;
   font-weight: bold;
   margin-right: 8%;
+  color: #4f473a;
 }
 
 .mypage_reservation_content{
-  background-color: #424242;
+  background-color: #d3c493 ;
   width: 90%;
   height: 20%;
-  margin-top: 4%;
+  margin-top: 2%;
+  color: #4f473a;
 }
 
 .mypage_reservation_period1{
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10%;
   margin-right: 2%;
   margin-top: 5%;
-  color: white;
+  color: #4f473a;
 }
 
 .mypage_reservation_period{
   width: 15%;
-  margin-top: 4%;
+  margin-top: 3%;
   padding-left: 2%;
+  font-size: 13px;
+  color: #4f473a;
 }
 
 .container_mypage1{
@@ -1722,81 +1763,87 @@ hr.five{
 
 .mypage_reservation_button{
   width: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 10px;
   float: right;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-right: 10%;
-  font-size: 20px;
+  font-size: 15px;
+  color: #4f473a;
 }
 
 .mypage_reservation_reservation1{
-  margin-left: 13%;
-  margin-top: 3%;
+  margin-left: 25%;
+  margin-top: 2%;
 }
 
 .mypage_reservation_reservation2{
   font-size: 20px;
   background-color: white;
-  color : black;
-  padding-left: 3.5%;
-  padding-right: 3.5%;
+  color : #4f473a;
+  font-size: 15px;
+  border: none;
+  padding-left: 2%;
+  padding-right: 2%;
   margin-right: 1%;
+  cursor: pointer;
+  color: #4f473a;
 }
 
 .mypage_reservation_notice{
   font-size: 13px;
   margin-top: 1%;
+  color: #4f473a;
 }
 
 .mypage_reservation_table{
-  border: 1px solid black;
+  border: 1px solid #d3c493;
   width: 90%;
-  height: 30%;
+  height: 20%;
   margin-top: 5%;
-  margin-bottom: 5%;
   text-align: center;
   border-collapse :collapse;
+  color: #4f473a;
 }
 
 .mypage_reservation_table th{
-  font-size: 20px;
-  border-bottom: 1px solid black;
-  background-color: #424242;
-  color: white;
+  font-size: 18px;
+  border-bottom: 1px solid #d3c493;
+  background-color: #d3c493;
+  color: #4f473a;
 }
 
 .mypage_reservation_table td{
   font-size: 14px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d3c493;
 }
 
 .mypage_coupon_table{
-  border: 1px solid black;
+  border: 1px solid #d3c493;
   width: 90%;
-  height: 30%;
+  height: 20%;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
   border-collapse :collapse;
+  color: #4f473a;
 }
 
 .mypage_coupon_table th{
   font-size: 20px;
-  border-bottom: 1px solid black;
-  background-color: #424242;
-  color: white;
+  border-bottom: 1px solid #d3c493;
+  background-color: #d3c493;
+  color: #4f473a;
 }
 
 .mypage_coupon_table td{
   font-size: 14px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d3c493;
 }
 
 .mypage_question_table{
-  border: 1px solid black;
+  border: 1px solid #d3c493;
   width: 90%;
-  height: 30%;
+  height: 20%;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
@@ -1805,22 +1852,27 @@ hr.five{
 
 .mypage_question_table th{
   font-size: 20px;
-  border-bottom: 1px solid black;
-  background-color: #424242;
-  color: white;
+  border-bottom: 1px solid #d3c493;
+  background-color: #d3c493;
+  color: #4f473a;
 }
 
 .mypage_question_table td{
   font-size: 14px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d3c493;
+}
+
+.mypage_question_table1{
+  color: #4f473a;
 }
 
 .mypage_question_table_td{
-  color: red;
+  color: #963939;
 }
 
 .mypage_question_table_td2{
-  color: blue;
+  color: #4f473a;
+  font-weight: bold;
 }
 
 .mypage_question_button{
@@ -1831,23 +1883,23 @@ hr.five{
 
 .mypage_question_button1{
   padding : 2%;
-  color: #424242;
+  color: #4f473a;
 }
 
 .searchRoom_1{
   width: 90%;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
 
 }
 .searchRoom_2{
-  padding: 2%;
+  padding: 10px;
   border-style: solid;
   border-width: 1px;
-  border-color: #424242;
+  border-color: #4f473a;
 }
 
 .searchRoom_2:hover{
   color: white;
-  background-color: #424242;
+  background-color: #4f473a;
 }
