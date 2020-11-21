@@ -1457,6 +1457,17 @@ hr.three{
   margin-right: 8%;
 }
 
+.mypage_content_membership_2{
+  width: 85%;
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 15px;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+}
+
 .mypage_content_reservation{
   margin-left: 3%;
   margin-top: 10%;
@@ -1467,6 +1478,18 @@ hr.three{
   font-weight: bold;
 }
 
+.mypage_content_reservation_1{
+  width: 85%;
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 15px;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  background-color: RGB(79, 71, 58, 0.35);
+}
+
 .mypage_content_coupon{
   margin-left: 3%;
   margin-top: 10%;
@@ -1475,6 +1498,17 @@ hr.three{
   padding-top: 2%;
   padding-bottom: 2%;
   font-weight: bold;
+}
+
+.mypage_content_coupon_1{
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 15px;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  background-color: RGB(79, 71, 58, 0.35);
 }
 
 .mypage_content_privacy{
@@ -1497,10 +1531,20 @@ hr.three{
   font-weight: bold;
 }
 
+.mypage_content_service_1{
+  margin-left: 3%;
+  margin-top: 10%;
+  font-size: 15px;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  background-color: RGB(79, 71, 58, 0.35);
+}
+
 hr.four{
   width : 70%;
   text-align : left;
-  margin-left : 10%;
   border-top: 1px dashed #4f473a;
   margin-top: 10px;
   margin-bottom: 2%;
@@ -1533,15 +1577,6 @@ hr.four{
   padding-top: 2%;
   padding-bottom: 2%;
 }
-.mypage_content_service{
-  margin-left: 3%;
-  margin-top: 10%;
-  font-size: 20px;
-  padding-left: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
 
 .container_mypage{
   width: 100%;
@@ -1579,41 +1614,24 @@ hr.five{
 .mypage_main_information{
   margin-top: 2%;
   margin-bottom: 5%;
-  font-size: 20px;
+  font-size: 10px;
 }
 
-.mypage_main_box1{
+.mypage_main_table1{
   border: 1px solid black;
   width: 90%;
   height: 14%;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .mypage_main_table1 th{
-  padding-top: 6%;
-  padding-left: 10%;
   font-size: 20px;
-  padding-bottom: 2%;
-}
-
-.td1{
-  padding-left: 14.5%;
-}
-
-.td2{
-  padding-left: 14%;
-}
-
-.td3{
-  padding-left: 14%;
-}
-
-.td4{
-  padding-left: 16%;
+  padding-top: 2%;
 }
 
 .mypage_membership_title2{
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 10%;
 }
 
@@ -1631,29 +1649,12 @@ hr.five{
   height: 14%;
   margin-top: 3%;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .mypage_main_table2 th{
-  padding-top: 4%;
+  padding-top: 2%;
   font-size: 20px;
-}
-
-.td5{
-  font-size: 20px;
-  padding-left: 14.5%;
-  padding-bottom: 2%;
-}
-
-.td6{
-  font-size: 20px;
-  padding-left: 14.5%;
-  padding-bottom: 2%;
-}
-
-.td7{
-  font-size: 20px;
-  padding-left: 12%;
-  padding-bottom: 2%;
 }
 
 .mypage_membership_title3{
@@ -1668,45 +1669,185 @@ hr.five{
   height: 14%;
   margin-top: 3%;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 .mypage_main_table3 th{
-  padding-top: 4%;
+  padding-top: 2%;
   font-size: 20px;
 }
 
-.td8{
-  font-size: 20px;
-  padding-left: 6%;
-  padding-bottom: 2%;
+.mypage_reservation_title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 8%;
 }
 
-.td9{
-  font-size: 20px;
-  padding-left: 6%;
-  padding-bottom: 2%;
+.mypage_reservation_content{
+  background-color: #424242;
+  width: 90%;
+  height: 20%;
+  margin-top: 4%;
 }
 
-.td10{
+.mypage_reservation_period1{
   font-size: 20px;
-  padding-left: 6.5%;
-  padding-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 2%;
+  margin-top: 5%;
+  color: white;
 }
 
-.td11{
-  font-size: 20px;
-  padding-left: 7%;
-  padding-bottom: 2%;
+.mypage_reservation_period{
+  width: 15%;
+  margin-top: 4%;
+  padding-left: 2%;
 }
 
-.td12{
-  font-size: 20px;
-  padding-left: 7%;
-  padding-bottom: 2%;
+.container_mypage1{
+  width: 100%;
+  min-height: 800px;
+  margin: auto;
+  display: flex;
 }
 
-.td13{
-  font-size: 20px;
-  padding-left: 5%;
+.mypage_reservation_past{
+  margin-left: 3.5%;
+}
+
+.mypage_reservation_past1{
+  color: white;
+}
+
+.mypage_reservation_button{
+  width: 10%;
+  padding-top: 2%;
   padding-bottom: 2%;
+  float: right;
+  margin-top: 5%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+
+.mypage_reservation_reservation1{
+  margin-left: 13%;
+  margin-top: 3%;
+}
+
+.mypage_reservation_reservation2{
+  font-size: 20px;
+  background-color: white;
+  color : black;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  margin-right: 1%;
+}
+
+.mypage_reservation_notice{
+  font-size: 13px;
+  margin-top: 1%;
+}
+
+.mypage_reservation_table{
+  border: 1px solid black;
+  width: 90%;
+  height: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  border-collapse :collapse;
+}
+
+.mypage_reservation_table th{
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  background-color: #424242;
+  color: white;
+}
+
+.mypage_reservation_table td{
+  font-size: 14px;
+  border-bottom: 1px solid black;
+}
+
+.mypage_coupon_table{
+  border: 1px solid black;
+  width: 90%;
+  height: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  border-collapse :collapse;
+}
+
+.mypage_coupon_table th{
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  background-color: #424242;
+  color: white;
+}
+
+.mypage_coupon_table td{
+  font-size: 14px;
+  border-bottom: 1px solid black;
+}
+
+.mypage_question_table{
+  border: 1px solid black;
+  width: 90%;
+  height: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  border-collapse :collapse;
+}
+
+.mypage_question_table th{
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  background-color: #424242;
+  color: white;
+}
+
+.mypage_question_table td{
+  font-size: 14px;
+  border-bottom: 1px solid black;
+}
+
+.mypage_question_table_td{
+  color: red;
+}
+
+.mypage_question_table_td2{
+  color: blue;
+}
+
+.mypage_question_button{
+  margin-top:10%;
+  text-align: center;
+  width: 90%;
+}
+
+.mypage_question_button1{
+  padding : 2%;
+  color: #424242;
+}
+
+.searchRoom_1{
+  width: 90%;
+  margin-top: 10%;
+  text-align: center;
+
+}
+.searchRoom_2{
+  padding: 2%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #424242;
+}
+
+.searchRoom_2:hover{
+  color: white;
+  background-color: #424242;
 }
