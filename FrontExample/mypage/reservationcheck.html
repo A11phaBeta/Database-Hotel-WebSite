@@ -40,18 +40,18 @@
 
   <!-- 메인 -->
   <main>
-    <div class="container_mypage">
+    <div class="container_mypage1">
       <div class="mypage_content">
         <div class="mypage_content_title">
           마이페이지
         </div>
         <hr class="three">
-        <div class="mypage_content_membership">
+        <div class="mypage_content_membership_2">
           <a href="membership.html">나의 멤버쉽 정보</a>
-          <a class="mypage_content_membership_1">></a>
         </div>
-        <div class="mypage_content_reservation">
+        <div class="mypage_content_reservation_1">
           <a href="reservationcheck.html">예약 확인 / 취소</a>
+          <a class="mypage_content_membership_1">></a>
         </div>
         <div class="mypage_content_coupon">
           <a href="coupon.html">쿠폰함</a>
@@ -75,64 +75,68 @@
       </div>
       <div class="mypage_main">
         <div class="mypage_header">
-          my page > 나의 멤버쉽 정보
+          my page > 예약 확인 / 취소
         </div>
         <div class="mypage_main_title">
-          나의 멤버쉽 정보
+          예약 확인 / 취소
         </div>
         <hr class = "five">
         <div class="mypage_main_information">
-          ooo님의 소프트 등급 및 포인트에 대한 안내입니다.
+          객실 예약내역을 확인하실수 있습니다.
         </div>
-        <table class = "mypage_main_table1">
-          <tr>
-            <th>이름</th>
-            <th>고객 번호</th>
-            <th>고객 등급</th>
-            <th>포인트</th>
-          </tr>
-          <tr>
-            <td class = "td1">이 승 섭</td>
-            <td class = "td2">123456</td>
-            <td class = "td3">CLASSIC</td>
-            <td class = "td4">10</td>
-          </tr>
-        </table>
-        <div class="mypage_membership_title2">
-          이용실적
-          <input type="button" name="등급별 혜택 보기" value="등급별 혜택 보기" class = "mypage_main_button1">
+        <div class="mypage_reservation_title">
+          객실 예약 내역
         </div>
-        <table class="mypage_main_table2">
-          <tr>
-            <th>투숙횟수</th>
-            <th>투숙일수</th>
-            <th>결제금액</th>
-          </tr>
-          <tr>
-            <td class = "td5">1회</td>
-            <td class = "td6">2박</td>
-            <td class = "td7">582,000원</td>
-          </tr>
-        </table>
-        <div class="mypage_membership_title3">
-          최근 6개월 내 포인트 적립/사용내역
+        <div class="mypage_reservation_content">
+          <div class="mypage_reservation_reservation">
+            <a class = "mypage_reservation_period1">투숙기간</a>
+            <select class="mypage_reservation_period" name="period" size="1">
+              <option value="">모든 예약보기</option>
+              <option value="">예약 완료</option>
+              <option value="">예약 취소</option>
+              <option value="">지난 예약</option>
+              <option value="">노쇼</option>
+            </select>
+            <a class = "mypage_reservation_past"><input type="date" id="currnetDate" class="date"/></a>
+            <a class = "mypage_reservation_past1">~</a>
+            <input type="date" id="currnetDate1" class="date"/>
+            <input type="button" name="예약 조회" value="예약 조회" class = "mypage_reservation_button">
+          </div>
+          <div class="mypage_reservation_reservation1">
+            <input type="button" name="당일" value="당일" class = "mypage_reservation_reservation2">
+            <input type="button" name="1주일" value="1주일" class = "mypage_reservation_reservation2">
+            <input type="button" name="1개월" value="1개월" class = "mypage_reservation_reservation2">
+            <input type="button" name="3개월" value="3개월" class = "mypage_reservation_reservation2">
+            <input type="button" name="전체" value="전체" class = "mypage_reservation_reservation2">
+          </div>
         </div>
-        <table class = "mypage_main_table3">
+        <div class="mypage_reservation_notice">
+          *투숙기간 기준으로 오늘부터 최신 예약 정보가 우선 조회됩니다.
+        </div>
+        <table class = "mypage_reservation_table">
           <tr>
-            <th>구분</th>
-            <th>이용내역</th>
-            <th>적립포인트</th>
-            <th>사용포인트</th>
-            <th>누적포인트</th>
-            <th>날짜</th>
+            <th>예약번호</th>
+            <th>객실</th>
+            <th>객실수</th>
+            <th>체크인/체크아웃</th>
+            <th>예약상태</th>
+            <th>취소</th>
           </tr>
           <tr>
-            <td class = "td8">적립</td>
-            <td class = "td9">적립</td>
-            <td class = "td10">10</td>
-            <td class = "td11">0</td>
-            <td class = "td12">10</td>
-            <td class = "td13">2020.11.17</td>
+            <td>12345</td>
+            <td>디럭스룸</td>
+            <td>1</td>
+            <td>2020-11-11 ~ 2020-11-12</td>
+            <td>예약</td>
+            <td><input type="button" name="취소하기" value="취소하기"></td>
+          </tr>
+          <tr>
+            <td>54321</td>
+            <td>디럭스룸</td>
+            <td>1</td>
+            <td>2020-11-8 ~ 2020-11-10</td>
+            <td>완료</td>
+            <td> </td>
           </tr>
         </table>
       </div>
@@ -164,6 +168,6 @@
       <img class="copyright" src="../img/copyright.png">
     </div>
   </footer>
-  <script src="js/mainBookingBar.js"></script>
+  <script src="../js/mainBookingBar.js"></script>
 </body>
 </html>
