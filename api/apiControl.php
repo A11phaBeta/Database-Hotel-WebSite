@@ -14,6 +14,16 @@ switch($_SERVER['QUERY_STRING']){
     require_once('./modules/user.php');
     echo doSignUp();
     break;
+  case 'getRoomList' :
+    require_once('./modules/room.php');
+    echo getRoomList();
+    break;
+
+  case 'logout' :
+    session_start();
+    session_destroy();
+    echo "<meta http-equiv='refresh' content='0.1; URL=/Database-Hotel-WebSite/?'>";
+    break;
 }
 
 

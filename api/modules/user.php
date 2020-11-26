@@ -7,18 +7,32 @@ function doLogin(){
 
   include "./config/DBConfig.php";
 
-  $stmt = $conn->prepare("select count(*) from user_information where user_web_id=? and user_password=?");
+  $stmt = $conn->prepare("select count(*), user_id, user_name from user_information where user_web_id=? and user_password=?");
   @$stmt->bind_param("ss", trim($_POST['id']), trim($_POST['pw']));
   $stmt->execute();
   $res = $stmt->get_result();
 
   $row = mysqli_fetch_assoc($res);
 
-  if($row['count(*)'] == 0){
+  /*if($row['count(*)'] == 0){
     return json_encode(array('result'=>'fail', 'cause'=>'NON_EXIST_USER'));
   }else{
     return json_encode(array('result'=>'success', 'cause'=>'EXIST_USER'));
+  }*/
+
+  if($row['count(*)'] == 0){
+    echo "<script>alert('아이디 또는 비밀번호를 확인해주세요!');</script>";
+  }else{
+    echo "<script>alert('".$row['user_name']." 회원님 환영합니다!');</script>";
+    if(!isset($_SESSION)){
+      session_start();
+
+      $_SESSION['user_id'] = $row['user_id'];
+      $_SESSION['user_name'] = $row['user_name'];
+    }
   }
+
+  echo "<meta http-equiv='refresh' content='0.1; URL=/Database-Hotel-WebSite/?".$_POST['Return']."'>";
 }
 
 function doSignUp(){
