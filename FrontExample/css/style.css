@@ -1448,7 +1448,7 @@ hr.three{
 /***mypage_membership.html***/
 .mypage_content{
   width: 15%;
-  height: 400px;
+  height: 500px;
   margin-left: 10%;
   margin-top: 5%;
   color: #4f473a;
@@ -1724,11 +1724,11 @@ hr.five{
 }
 
 .mypage_reservation_content{
-  background-color: #4f473a ;
+  background-color: #d3c493 ;
   width: 90%;
   height: 20%;
   margin-top: 2%;
-  color: white;
+  color: #4f473a;
 }
 
 .mypage_reservation_period1{
@@ -1736,7 +1736,7 @@ hr.five{
   margin-left: 10%;
   margin-right: 2%;
   margin-top: 5%;
-  color: white;
+  color: #4f473a;
 }
 
 .mypage_reservation_period{
@@ -1807,9 +1807,11 @@ hr.five{
 
 .mypage_reservation_table th{
   font-size: 18px;
-  border-bottom: 1px solid #4f473a;
-  background-color: #4f473a;
-  color: white;
+
+  border-bottom: 1px solid #d3c493;
+  background-color: #d3c493;
+  color: #4f473a;
+
 }
 
 .mypage_reservation_table td{
@@ -1819,6 +1821,11 @@ hr.five{
 
 .mypage_coupon_table{
   border: 1px solid #4f473a;
+  border-bottom: 1px solid #d3c493;
+}
+
+.mypage_coupon_table{
+  border: 1px solid #d3c493;
   width: 90%;
   height: 20%;
   margin-top: 5%;
@@ -1830,9 +1837,9 @@ hr.five{
 
 .mypage_coupon_table th{
   font-size: 20px;
-  border-bottom: 1px solid #4f473a;
-  background-color: #4f473a;
-  color: white;
+  border-bottom: 1px solid #d3c493;
+  background-color: #d3c493;
+  color: #4f473a;
 }
 
 .mypage_coupon_table td{
@@ -1842,6 +1849,11 @@ hr.five{
 
 .mypage_question_table{
   border: 1px solid #4f473a;
+  border-bottom: 1px solid #d3c493;
+}
+
+.mypage_question_table{
+  border: 1px solid #d3c493;
   width: 90%;
   height: 20%;
   margin-top: 5%;
@@ -1852,14 +1864,15 @@ hr.five{
 
 .mypage_question_table th{
   font-size: 20px;
-  border-bottom: 1px solid #4f473a;
-  background-color: #4f473a;
-  color: white;
+
+  border-bottom: 1px solid #d3c493;
+  background-color: #d3c493;
+  color: #4f473a;
 }
 
 .mypage_question_table td{
   font-size: 14px;
-  border-bottom: 1px solid #4f473a;
+  border-bottom: 1px solid #d3c493;
 }
 
 .mypage_question_table1{
