@@ -9,6 +9,16 @@ function btn_js_click2() {
     document.location.href = "../login/mainLogin.html";
 }
 
+function btn_js_click3() {
+    alert("탈퇴가 성공적으로 완료되었습니다.");
+    document.location.href = "../main.html";
+}
+
+function btn_js_click4() {
+    alert("프로필이 수정되었습니다.");
+    document.location.href = "../mypage/password.html";
+}
+
 
 
 /****signUp Page****/

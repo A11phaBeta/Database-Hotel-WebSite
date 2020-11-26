@@ -1,5 +1,3 @@
-style
-
 body{
   margin: 0;
 }
@@ -455,27 +453,34 @@ footer{
 }
 
 .money{
-  margin-top: 15%;
+  margin-top: 17%;
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
-  width: 70%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 60%;
+  padding-top: 8px;
+  padding-bottom: 8px;
   background-color: #d3c493;
   font-weight: bold;
 }
 
 .money > p{
+  font-size: 18px;
   margin: 0;
 }
 
 
-/***manager***/
+/***manage***/
 .manage{
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.manage > a{
+  font-size: 10px;
+  margin-left: 3px;
+  margin-right: 7px;
 }
 
 .managerscreen{
@@ -540,7 +545,6 @@ footer{
 }
 
 .manageMenu ul > li > a:hover{
-  color: #660033;
   font-weight: bold;
 }
 
@@ -552,15 +556,14 @@ footer{
   transform: translateX(-50%);
 }
 
-.dropDown{
+.m_menu{
   display: inline-block;
   color: #595041;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.dropDown:hover{
-  color: #660033;
+.m_menu:hover{
   font-weight: bold;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -1281,7 +1284,7 @@ hr.three{
 .notice_table{
    width:80%;
    border-collapse:collapse;
-   border-top:2px solid #8d8d8d;
+   border-top:2px solid #4f473a;
    margin-left: 10%;
    margin-top: 2%;
    margin-bottom: 2%;
@@ -1289,9 +1292,10 @@ hr.three{
 
 .notice_th{
    padding:10px 8px;
-   background:#f9f9f9;
-   color:#666;
-   border-bottom:1px solid #8d8d8d;
+   background:#4f473a;
+   color:white;
+   font-weight: 100;
+   border-bottom:1px solid #4f473a;
 }
 
 .notice_td1{
@@ -1299,7 +1303,7 @@ hr.three{
   text-align:center;
   line-height:1.25em;
   color:#666;
-  border-bottom:1px solid #8d8d8d;
+  border-bottom:1px solid #4f473a;
   cursor: pointer;
 }
 
@@ -1308,7 +1312,7 @@ hr.three{
    text-align:center;
    line-height:1.25em;
    color:#666;
-   border-bottom:1px solid #8d8d8d;
+   border-bottom:1px solid #4f473a;
 }
 
 .notice_search{
@@ -1320,7 +1324,6 @@ hr.three{
   width: 80%;
   margin-left: 10%;
 }
-
 
 .notice_searchimg{
   width: 25px;
@@ -1448,7 +1451,7 @@ hr.three{
 /***mypage_membership.html***/
 .mypage_content{
   width: 15%;
-  height: 500px;
+  height: 470px;
   margin-left: 10%;
   margin-top: 5%;
   color: #4f473a;
@@ -1724,11 +1727,11 @@ hr.five{
 }
 
 .mypage_reservation_content{
-  background-color: #d3c493 ;
+  background-color: #4f473a ;
   width: 90%;
   height: 20%;
   margin-top: 2%;
-  color: #4f473a;
+  color: white;
 }
 
 .mypage_reservation_period1{
@@ -1736,7 +1739,7 @@ hr.five{
   margin-left: 10%;
   margin-right: 2%;
   margin-top: 5%;
-  color: #4f473a;
+  color: white;
 }
 
 .mypage_reservation_period{
@@ -1780,7 +1783,6 @@ hr.five{
 .mypage_reservation_reservation2{
   font-size: 20px;
   background-color: white;
-  color : #4f473a;
   font-size: 15px;
   border: none;
   padding-left: 2%;
@@ -1807,11 +1809,9 @@ hr.five{
 
 .mypage_reservation_table th{
   font-size: 18px;
-
-  border-bottom: 1px solid #d3c493;
-  background-color: #d3c493;
-  color: #4f473a;
-
+  border-bottom: 1px solid #4f473a;
+  background-color: #4f473a;
+  color: white;
 }
 
 .mypage_reservation_table td{
@@ -1821,11 +1821,11 @@ hr.five{
 
 .mypage_coupon_table{
   border: 1px solid #4f473a;
-  border-bottom: 1px solid #d3c493;
+  border-bottom: 1px solid #4f473a;
 }
 
 .mypage_coupon_table{
-  border: 1px solid #d3c493;
+  border: 1px solid #4f473a;
   width: 90%;
   height: 20%;
   margin-top: 5%;
@@ -1837,9 +1837,9 @@ hr.five{
 
 .mypage_coupon_table th{
   font-size: 20px;
-  border-bottom: 1px solid #d3c493;
-  background-color: #d3c493;
-  color: #4f473a;
+  border-bottom: 1px solid #4f473a;
+  background-color: #4f473a;
+  color: white;
 }
 
 .mypage_coupon_table td{
@@ -1849,11 +1849,11 @@ hr.five{
 
 .mypage_question_table{
   border: 1px solid #4f473a;
-  border-bottom: 1px solid #d3c493;
+  border-bottom: 1px solid #4f473a;
 }
 
 .mypage_question_table{
-  border: 1px solid #d3c493;
+  border: 1px solid #4f473a;
   width: 90%;
   height: 20%;
   margin-top: 5%;
@@ -1864,15 +1864,14 @@ hr.five{
 
 .mypage_question_table th{
   font-size: 20px;
-
-  border-bottom: 1px solid #d3c493;
-  background-color: #d3c493;
-  color: #4f473a;
+  border-bottom: 1px solid #4f473a;
+  background-color: #4f473a;
+  color: white;
 }
 
 .mypage_question_table td{
   font-size: 14px;
-  border-bottom: 1px solid #d3c493;
+  border-bottom: 1px solid #4f473a;
 }
 
 .mypage_question_table1{
@@ -1903,8 +1902,8 @@ hr.five{
   width: 90%;
   margin-top: 5%;
   text-align: center;
-
 }
+
 .searchRoom_2{
   padding: 10px;
   border-style: solid;
@@ -1917,9 +1916,11 @@ hr.five{
   background-color: #4f473a;
 }
 
+
 /***password.html***/
 .mypage_main_pwdtitle{
-  font-size: 40px;
+  font-size: 35px;
+  color: #4f473a;
   text-align: center;
   margin-top: 10%;
   margin-right: 5%;
@@ -1938,39 +1939,57 @@ hr.five{
 }
 
 .links1{
+  font-size: 12px;
   text-align: center;
   margin-right: 5%;
 }
 
-/***privacy.html***/
 
+/***privacy.html***/
 .mypage_privacy_main{
   display: flex;
 }
 
 .mypage_privacy_main_left{
-  margin-top: 5%;
-  margin-right: 20%;
+  margin-right: 15%;
   margin-left: 5%;
-}
-
-.mypage_privacy_main_right{
-  margin-top: 5%;
 }
 
 .login_ID1{
   text-align: left;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+  color: #4f473a;
 }
 
 .mypage_privacy_main_left1{
   font-size: 14px;
   padding: 20px;
   border: none;
-  width: 260px;
-  margin-bottom: 20px;
-  background-color: #8c8c8c;
+  width: 220px;
+  margin-bottom: 40px;
+  background-color: #e4e4e4;
+  color: rgb(119, 119, 119);
+}
+
+.text-field2 {
+  font-size: 14px;
+  padding: 20px;
+  border: none;
+  width: 230px;
+  margin-bottom: 42px;
+}
+
+.submit-btn2{
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  width: 230px;
+  height: 50px;
+  background-color: #595041;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .mypage_main_pwdbutton3{
@@ -1979,34 +1998,72 @@ hr.five{
   margin-top: 2%;
 }
 
-/***withdrawal***/
 
+/***withdrawal***/
 .mypage_withdrawal_title{
   margin-top: 5%;
   margin-bottom: 2%;
+  margin-left: 3%;
+  color: #4f473a;
+}
+
+.request{
+  margin-left: 3%;
 }
 
 .mypage_withdrawal_agreement{
   margin-top: 2%;
   font-size: 14px;
   margin-bottom: 2%;
+  color: #4f473a;
 }
 
 .mypage_withdrawal_agreement1{
   margin-top: 1%;
+  color: #4f473a;
 }
 
 .mypage_withdrawal_agreement2{
   margin-top: 2%;
+  color: #4f473a;
 }
 
 .agreement_subtitle{
-  margin-bottom: 2%;
-  color: black;
+  margin-bottom: 5%;
+  color: #4f473a;
   font-size: 14px;
+  color: #4f473a;
+  margin-left: 3%;
+  margin-top: 5%;
 }
 
 .booking_privacy_checklist1{
   font-size: 14px;
-  color: black;
+  color: #4f473a;  
+  margin-left: 3%;
+}
+
+.sublist{
+  font-size: 12px;
+  margin-left: 3%;
+  color: #4f473a;
+  margin-bottom: 2%;
+}
+
+
+
+/*** managerPage ***/
+/*** booking_m ***/
+.mtext > p{
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+
+/*** booking_detail ***/
+.rListtext{
+  font-size: 15px;
 }
