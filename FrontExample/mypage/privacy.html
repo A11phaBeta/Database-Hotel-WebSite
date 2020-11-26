@@ -54,7 +54,6 @@
         </div>
         <div class="mypage_content_coupon_1">
           <a href="coupon.html">쿠폰함</a>
-          <a class="mypage_content_membership_1">></a>
         </div>
         <div class="mypage_content_service">
           <a href="question.html">문의 내역</a>
@@ -65,6 +64,7 @@
         <hr class="four">
         <div class="mypage_content_privacy_1">
           <a href = "password.html">프로필 수정</a>
+          <a class="mypage_content_membership_1">></a>
         </div>
         <div class="mypage_content_privacy_2">
           <a href="withdrawal.html">탈퇴 요청</a>
@@ -72,32 +72,39 @@
       </div>
       <div class="mypage_main">
         <div class="mypage_header">
-          my page > 쿠폰함
+          my page > 프로필 수정
         </div>
         <div class="mypage_main_title">
-          쿠폰함
+          회원정보
         </div>
         <hr class = "five">
-        <div class="mypage_main_information">
-          보유하신 쿠폰 리스트입니다.
+        <div class="mypage_privacy_main">
+          <div class="mypage_privacy_main_left">
+            <div class="login_ID1">아이디</div>
+            <div class="mypage_privacy_main_left1">
+              ab13696802@gmail.com
+            </div>
+            <div class="login_ID1">생년월일</div>
+            <div class="mypage_privacy_main_left1">
+              2000.10.12
+            </div>
+            <div class="login_ID1">성별</div>
+            <div class="mypage_privacy_main_left1">
+              남자
+            </div>
+          </div>
+          <div class="mypage_privacy_main_right">
+            <div class="login_ID1">비밀번호</div>
+            <input type="password" name="password" class="text-field" placeholder="ab13696802">
+            <div class="login_ID1">이름</div>
+            <input type="text" name="email" class="text-field" placeholder="이승섭">
+            <div class="login_ID1">휴대전화</div>
+            <input type="password" name="password" class="text-field" placeholder="010-4038-1668">
+          </div>
         </div>
-        <table class="mypage_coupon_table">
-          <tr>
-            <th>쿠폰명</th>
-            <th>사용기간</th>
-            <th>쿠폰상태</th>
-          </tr>
-          <tr>
-            <td>1만 포인트 사용권</td>
-            <td>2020-10-11 ~ 2020-11-30</td>
-            <td>미사용</td>
-          </tr>
-          <tr>
-            <td>가입기념 15,000원 포인트 사용권</td>
-            <td>2020-10-11 ~ 2020-11-11</td>
-            <td>사용</td>
-          </tr>
-        </table>
+        <div class="mypage_main_pwdbutton3">
+          <input type="button" value="수정" class="submit-btn" onclick="location.href = 'privacy.html'">
+        </div>
       </div>
     </div>
   </main>

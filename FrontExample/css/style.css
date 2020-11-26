@@ -1,3 +1,5 @@
+style
+
 body{
   margin: 0;
 }
@@ -1463,7 +1465,6 @@ hr.three{
 
 hr.three{
   width : 90%;
-  background-color : #4f473a;
   text-align : left;
   margin-left : 5%;
   border: 0;
@@ -1786,7 +1787,6 @@ hr.five{
   padding-right: 2%;
   margin-right: 1%;
   cursor: pointer;
-  color: #4f473a;
 }
 
 .mypage_reservation_notice{
@@ -1796,7 +1796,7 @@ hr.five{
 }
 
 .mypage_reservation_table{
-  border: 1px solid #d3c493;
+  border: 1px solid #4f473a;
   width: 90%;
   height: 20%;
   margin-top: 5%;
@@ -1807,13 +1807,20 @@ hr.five{
 
 .mypage_reservation_table th{
   font-size: 18px;
+
   border-bottom: 1px solid #d3c493;
   background-color: #d3c493;
   color: #4f473a;
+
 }
 
 .mypage_reservation_table td{
   font-size: 14px;
+  border-bottom: 1px solid #4f473a;
+}
+
+.mypage_coupon_table{
+  border: 1px solid #4f473a;
   border-bottom: 1px solid #d3c493;
 }
 
@@ -1837,6 +1844,11 @@ hr.five{
 
 .mypage_coupon_table td{
   font-size: 14px;
+  border-bottom: 1px solid #4f473a;
+}
+
+.mypage_question_table{
+  border: 1px solid #4f473a;
   border-bottom: 1px solid #d3c493;
 }
 
@@ -1852,6 +1864,7 @@ hr.five{
 
 .mypage_question_table th{
   font-size: 20px;
+
   border-bottom: 1px solid #d3c493;
   background-color: #d3c493;
   color: #4f473a;
@@ -1902,4 +1915,98 @@ hr.five{
 .searchRoom_2:hover{
   color: white;
   background-color: #4f473a;
+}
+
+/***password.html***/
+.mypage_main_pwdtitle{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.mypage_main_pwdbutton1{
+  text-align: center;
+  margin-right: 5%;
+}
+
+.mypage_main_pwdbutton2{
+  text-align: center;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.links1{
+  text-align: center;
+  margin-right: 5%;
+}
+
+/***privacy.html***/
+
+.mypage_privacy_main{
+  display: flex;
+}
+
+.mypage_privacy_main_left{
+  margin-top: 5%;
+  margin-right: 20%;
+  margin-left: 5%;
+}
+
+.mypage_privacy_main_right{
+  margin-top: 5%;
+}
+
+.login_ID1{
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.mypage_privacy_main_left1{
+  font-size: 14px;
+  padding: 20px;
+  border: none;
+  width: 260px;
+  margin-bottom: 20px;
+  background-color: #8c8c8c;
+  color: white;
+}
+
+.mypage_main_pwdbutton3{
+  text-align: center;
+  margin-right: 12%;
+  margin-top: 2%;
+}
+
+/***withdrawal***/
+
+.mypage_withdrawal_title{
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.mypage_withdrawal_agreement{
+  margin-top: 2%;
+  font-size: 14px;
+  margin-bottom: 2%;
+}
+
+.mypage_withdrawal_agreement1{
+  margin-top: 1%;
+}
+
+.mypage_withdrawal_agreement2{
+  margin-top: 2%;
+}
+
+.agreement_subtitle{
+  margin-bottom: 2%;
+  color: black;
+  font-size: 14px;
+}
+
+.booking_privacy_checklist1{
+  font-size: 14px;
+  color: black;
 }

@@ -54,7 +54,6 @@
         </div>
         <div class="mypage_content_coupon_1">
           <a href="coupon.html">쿠폰함</a>
-          <a class="mypage_content_membership_1">></a>
         </div>
         <div class="mypage_content_service">
           <a href="question.html">문의 내역</a>
@@ -68,36 +67,40 @@
         </div>
         <div class="mypage_content_privacy_2">
           <a href="withdrawal.html">탈퇴 요청</a>
+          <a class="mypage_content_membership_1">></a>
         </div>
       </div>
       <div class="mypage_main">
         <div class="mypage_header">
-          my page > 쿠폰함
+          my page > 탈퇴 요청
         </div>
         <div class="mypage_main_title">
-          쿠폰함
+          회원탈퇴
         </div>
         <hr class = "five">
-        <div class="mypage_main_information">
-          보유하신 쿠폰 리스트입니다.
+        <div class="mypage_withdrawal_title">
+          탈퇴하시려는 사유를 입력해주세요.
         </div>
-        <table class="mypage_coupon_table">
-          <tr>
-            <th>쿠폰명</th>
-            <th>사용기간</th>
-            <th>쿠폰상태</th>
-          </tr>
-          <tr>
-            <td>1만 포인트 사용권</td>
-            <td>2020-10-11 ~ 2020-11-30</td>
-            <td>미사용</td>
-          </tr>
-          <tr>
-            <td>가입기념 15,000원 포인트 사용권</td>
-            <td>2020-10-11 ~ 2020-11-11</td>
-            <td>사용</td>
-          </tr>
-        </table>
+        <textarea name="name" rows="8" cols="80" placeholder="저희 호텔에 하고싶으신 말씀을 적어주세요."></textarea>
+        <div class="mypage_withdrawal_agreement2">
+          <a class = "agreement_subtitle">회원탈퇴 안내사항</a>
+          <ol>
+            <li>탈퇴 이후에는 보유하신 쿠폰, MiLE 그리고 참여하신 이벤트의 응모 및 당첨 혜택이 모두 소멸됩니다.</li>
+            <li>회원정보는 탈퇴 시 관련법령에 따라 보관 의무가 있는 경우를 제외하고는 즉시 삭제됩니다.</li>
+            <li>전자상거래 등에서의 소비자보호에 관한 법률에 따라 계약 또는 청약철회에 관한 기록,<br>
+              대금 결제 및 재화 등의 공급에 관한 기록은 5년, 그리고 소비자의 불만 또는 분쟁처리에 관한 기록은 3년간 보존됩니다.</li>
+            <li>탈퇴 이후에는 어떠한 방법으로도 삭제된 회원정보를 복원할 수 없습니다.</li>
+          </ol>
+        </div>
+        <div class="mypage_withdrawal_agreement">
+          회원 탈퇴 동의
+          <div class="mypage_withdrawal_agreement1">
+            <input type="checkbox" name="privacy" value="동의"><a class= "booking_privacy_checklist">회원탈퇴 안내를 모두 확인하였으며 탈퇴에 동의하였습니다.</a>
+          </div>
+        </div>
+        <div class="mypage_main_pwdbutton3">
+          <input type="button" value="탈퇴하기" class="submit-btn" onclick="location.href = 'main.html'">
+        </div>
       </div>
     </div>
   </main>
