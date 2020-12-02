@@ -7,6 +7,9 @@
   <title>Hotel</title>
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script> function btn3() {
+    document.update.submit();
+  }</script>
 </head>
 
 <body>
@@ -14,25 +17,25 @@
   <header>
     <!-- 로그인, 회원가입 -->
     <div class="loginSign">
-      <a href="membership.html" class="login">마이페이지</a>
-      <a href="../main.html" class="sign">로그아웃</a>
+      <a href="membership.php" class="login">마이페이지</a>
+      <a href="../main.php" class="sign">로그아웃</a>
     </div>
 
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
         <div class="menu1">
-          <a href="../roomList.html">예약하기</a>
+          <a href="../roomList.php">예약하기</a>
         </div>
         <div class="menu2">
-          <a href="../ntroduce.html">호텔소개</a>
+          <a href="../ntroduce.php">호텔소개</a>
         </div>
-        <a href="../main.html"><img src="../img/logo.png" class="logo" /></a>
+        <a href="../main.php"><img src="../img/logo.png" class="logo" /></a>
         <div class="menu3">
-          <a href="../customerService.html">고객문의</a>
+          <a href="../customerService.php">고객문의</a>
         </div>
         <div class="menu4">
-          <a href="../notice.html">게시판</a>
+          <a href="../notice.php">게시판</a>
         </div>
       </div>
     </nav>
@@ -47,27 +50,27 @@
         </div>
         <hr class="three">
         <div class="mypage_content_membership_2">
-          <a href="membership.html">나의 멤버쉽 정보</a>
+          <a href="membership.php">나의 멤버쉽 정보</a>
         </div>
         <div class="mypage_content_reservation">
-          <a href="reservationcheck.html">예약 확인 / 취소</a>
+          <a href="reservationcheck.php">예약 확인 / 취소</a>
         </div>
         <div class="mypage_content_coupon_1">
-          <a href="coupon.html">쿠폰함</a>
+          <a href="coupon.php">쿠폰함</a>
         </div>
         <div class="mypage_content_service">
-          <a href="question.html">문의 내역</a>
+          <a href="question.php">문의 내역</a>
         </div>
         <div class="mypage_content_privacy">
           개인정보
         </div>
         <hr class="four">
         <div class="mypage_content_privacy_1">
-          <a href = "password.html">프로필 수정</a>
+          <a href = "password.php">프로필 수정</a>
           <a class="mypage_content_membership_1">></a>
         </div>
         <div class="mypage_content_privacy_2">
-          <a href="withdrawal.html">탈퇴 요청</a>
+          <a href="withdrawal.php">탈퇴 요청</a>
         </div>
       </div>
       <div class="mypage_main">
@@ -84,8 +87,9 @@
         <div class="mypage_privacy_main">
           <div class="mypage_privacy_main_left">
             <div class="login_ID1">아이디</div>
+
             <div class="mypage_privacy_main_left1">
-              ab13696802@gmail.com
+              <?php session_start(); $useremail=$_SESSION["useremail"]; echo "$useremail";?>
             </div>
             <div class="login_ID1">생년월일</div>
             <div class="mypage_privacy_main_left1">
@@ -93,21 +97,23 @@
             </div>
             <div class="login_ID1">성별</div>
             <div class="mypage_privacy_main_left1">
-              남자
+              <?= $_SESSION["usergender"]?>
             </div>
           </div>
+          <form name="update" method="post" action="../../api/modules/update.php">
           <div class="mypage_privacy_main_right">
             <div class="login_ID1">비밀번호</div>
-            <input type="password" name="password" class="text-field2" placeholder="ab13696802">
+            <input type="password" name="password" class="text-field2" placeholder="<?= $_SESSION["userpassword"]?>">
             <div class="login_ID1">이름</div>
-            <input type="text" name="email" class="text-field2" placeholder="이승섭">
+            <input type="text" name="name" class="text-field2" placeholder="<?= $_SESSION["username"]?>">
             <div class="login_ID1">휴대전화</div>
-            <input type="password" name="password" class="text-field2" placeholder="010-4038-1668">
+            <input type="text" name="contact" class="text-field2" placeholder='<?= '0'.$_SESSION["usercontact"]?>'>
           </div>
         </div>
         <div class="mypage_main_pwdbutton3">
-          <input type="button" value="수정" class="submit-btn2" onclick="btn_js_click4();">
+          <input type="button" value="수정" class="submit-btn2" onclick="btn3()">
         </div>
+        </form>
       </div>
     </div>
   </main>
@@ -116,15 +122,15 @@
   <footer>
     <div class="bottomMenu">
       <ul>
-        <li><a style="text-align: left;" href="../roomList.html">예약하기</a></li>
-        <li><a href="../introduce.html">호텔소개</a></li>
-        <li><a style="text-align: right;" href="../customerService.html">고객문의</a></li>
-        <li><a style="text-align: right;" href="../notice.html">게시판</a></li>
+        <li><a style="text-align: left;" href="../roomList.php">예약하기</a></li>
+        <li><a href="../introduce.php">호텔소개</a></li>
+        <li><a style="text-align: right;" href="../customerService.php">고객문의</a></li>
+        <li><a style="text-align: right;" href="../notice.php">게시판</a></li>
       </ul>
     </div>
     <div class="bottomMid">
       <div class="bottomLogo">
-        <a href="../main.html"><img src="../img/logo.png" class="bottomLogo" /></a>
+        <a href="../main.php"><img src="../img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="../img/snsLogo.png">

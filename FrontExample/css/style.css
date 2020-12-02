@@ -160,12 +160,27 @@ main{
   overflow: hidden;
 }
 
-.imdSld{
-  width: auto;
-  height: auto;
+.imgSld{
+  padding-left:30px;
+  padding-top:200px;
+  max-width: 100%;
+  max-height: 100%;
   margin-left: -30px;
 }
-
+.imgSld1{
+  padding-left:30px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: -30px;
+}
+.imgSld2{
+  padding-left:30px;
+  padding-top:200px;
+  padding-bottom:200px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: -30px;
+}
 /*메인메뉴 예약 바*/
 .bookingMainBar{
   text-align: center;
@@ -239,7 +254,7 @@ td{
 .eventPage{
   margin: auto;
   width: 50%;
-  height: 50%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -277,34 +292,38 @@ footer{
 }
 
 .bottomLogo{
-  width: 250px;
-  height: auto;
+  max-height: 50%;
+  max-width: 50%;
   float: left;
-  margin-left: 10%;
-  padding: 0;
+  margin-left:3%;
+  margin-top:-1%;
+    padding: 0;
 }
 
 .snsLogo{
+  float:middle;
   position: absolute;
-  height: 99.6px;
-  width: 310px;
+  max-height: 50%;
+  max-width: 20%;
   left:50%;
+  margin-left:-10%;
   margin-top: 20px;
-  margin-left:-180px;
+
   text-align:center
 }
 
 .bottomWord{
   float: right;
-  margin-top: 1.5%;
+  margin-top: 2%;
   margin-right: 1%;
-  width: 420px;
-  height: auto;
+  max-height: 100%;
+  max-width: 30%;
 }
 
 .copyright{
-  width: 350px;
-  height: auto;
+  max-height: 50%;
+  max-width: 30%;
+  margin-right:1%;
   float: right;
 }
 
@@ -1372,24 +1391,28 @@ hr.three{
   width: 25px;
   height: 25px;
   margin-right: 10px;
+  border: 1px solid #F5DA81;
 }
 
 .notice_preimg{
   width: 25px;
   height: 25px;
   margin-right: 10px;
+  border: 1px solid #F5DA81;
 }
 
 .notice_nextimg{
   width: 25px;
   height: 25px;
   margin-left: 10px;
+  border: 1px solid #F5DA81;
 }
 
 .notice_next_nextimg{
   width: 25px;
   height: 25px;
   margin-left: 10px;
+  border: 1px solid #F5DA81;
 }
 
 .notice_pagenumber{
@@ -2035,7 +2058,7 @@ hr.five{
 
 .booking_privacy_checklist1{
   font-size: 14px;
-  color: #4f473a;  
+  color: #4f473a;
   margin-left: 3%;
 }
 
@@ -2056,43 +2079,10 @@ hr.five{
   margin-right: 10%;
 }
 
-.pagechoose{
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 200px;
-  font-size: 5px;
-  text-align: center;
-  align-items: center;
-}
 
-.go1, .go2, .go3, .go4{
-  width: 20px;
-  margin-right: 10px;
-}
-
-.go3{
-  margin-left: 10px;
-}
-
-.pgenum{
-  font-size: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #4f473a;
-}
 
 
 /*** booking_detail ***/
 .rListtext{
   font-size: 15px;
-}
-
-
-.notice_table12{
-   width:80%;
-   border-collapse:collapse;
-   border-top:2px solid #4f473a;
-   margin-left: 10%;
-   margin-top: 2%;
-   margin-bottom: 10%;
 }

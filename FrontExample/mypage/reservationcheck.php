@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -7,6 +8,7 @@
   <title>Hotel</title>
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <?php session_start(); ?>
 </head>
 
 <body>
@@ -14,32 +16,34 @@
   <header>
     <!-- 로그인, 회원가입 -->
     <div class="loginSign">
-      <a href="membership.html" class="login">마이페이지</a>
-      <a href="../main.html" class="sign">로그아웃</a>
+      <a href="membership.php" class="login">마이페이지</a>
+      <a href="../main.php" class="sign">로그아웃</a>
     </div>
 
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
         <div class="menu1">
-          <a href="../roomList.html">예약하기</a>
+          <a href="../roomList.php">예약하기</a>
         </div>
         <div class="menu2">
-          <a href="../introduce.html">호텔소개</a>
+          <a href="../introduce.php">호텔소개</a>
         </div>
-        <a href="../main.html"><img src="../img/logo.png" class="logo" /></a>
+        <a href="../main.php"><img src="../img/logo.png" class="logo" /></a>
         <div class="menu3">
-          <a href="../customerService.html">고객문의</a>
+          <a href="../customerService.php">고객문의</a>
         </div>
         <div class="menu4">
-          <a href="../notice.html">게시판</a>
+          <a href="../notice.php">게시판</a>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- 메인 -->
+
   <main>
+    <form name="11" method="post" action="../../api/modules/FindResev.php">
     <div class="container_mypage1">
       <div class="mypage_content">
         <div class="mypage_content_title">
@@ -47,29 +51,30 @@
         </div>
         <hr class="three">
         <div class="mypage_content_membership_2">
-          <a href="membership.html">나의 멤버쉽 정보</a>
+          <a href="membership.php">나의 멤버쉽 정보</a>
         </div>
         <div class="mypage_content_reservation_1">
-          <a href="reservationcheck.html">예약 확인 / 취소</a>
+          <a href="reservationcheck.php?rownumber=0">예약 확인 / 취소</a>
           <a class="mypage_content_membership_1">></a>
         </div>
         <div class="mypage_content_coupon">
-          <a href="coupon.html">쿠폰함</a>
+          <a href="coupon.php">쿠폰함</a>
         </div>
         <div class="mypage_content_service">
-          <a href="question.html">문의 내역</a>
+          <a href="question.php">문의 내역</a>
         </div>
         <div class="mypage_content_privacy">
           개인정보
         </div>
         <hr class="four">
         <div class="mypage_content_privacy_1">
-          <a href = "password.html">프로필 수정</a>
+          <a href = "password.php">프로필 수정</a>
         </div>
         <div class="mypage_content_privacy_2">
-          <a href="withdrawal.html">탈퇴 요청</a>
+          <a href="withdrawal.php">탈퇴 요청</a>
         </div>
       </div>
+
       <div class="mypage_main">
         <div class="mypage_header">
           my page > 예약 확인 / 취소
@@ -88,23 +93,24 @@
           <div class="mypage_reservation_reservation">
             <a class = "mypage_reservation_period1">투숙기간</a>
             <select class="mypage_reservation_period" name="period" size="1">
-              <option value="">모든 예약보기</option>
-              <option value="">예약 완료</option>
-              <option value="">예약 취소</option>
-              <option value="">지난 예약</option>
-              <option value="">노쇼(No Show)</option>
+              <option value="1">모든 예약보기</option>
+              <option value="2">예약 완료</option>
+              <option value="3">예약 취소</option>
+              <option value="4">지난 예약</option>
+              <option value="5">노쇼(No Show)</option>
             </select>
-            <a class = "mypage_reservation_past"><input type="date" id="currnetDate" class="date"/></a>
+            <a class = "mypage_reservation_past">
+              <input type="date" id="currnetDate" name="curDate" class="date"/></a>
             <a class = "mypage_reservation_past1">~</a>
-            <input type="date" id="currnetDate1" class="date"/>
-            <input type="button" name="예약 조회" value="예약 조회" class = "mypage_reservation_button">
+            <input type="date" id="currnetDate1" name="curDate1" class="date"/>
+            <input type="submit" name="예약 조회" value="예약 조회" class = "mypage_reservation_button" >
           </div>
           <div class="mypage_reservation_reservation1">
-            <input type="button" name="당일" value="당일" class = "mypage_reservation_reservation2">
-            <input type="button" name="1주일" value="1주일" class = "mypage_reservation_reservation2">
-            <input type="button" name="1개월" value="1개월" class = "mypage_reservation_reservation2">
-            <input type="button" name="3개월" value="30개월" class = "mypage_reservation_reservation2">
-            <input type="button" name="전체" value="전체" class = "mypage_reservation_reservation2">
+            <input type="radio" name="indexDate" value="당일" class = "mypage_reservation_reservation2" >당일
+            <input type="radio" name="indexDate" value="1주일" class = "mypage_reservation_reservation2">1주일
+            <input type="radio" name="indexDate" value="1개월" class = "mypage_reservation_reservation2">1개월
+            <input type="radio" name="indexDate" value="30개월" class = "mypage_reservation_reservation2">30개월
+            <input type="radio" name="indexDate" value="전체" class = "mypage_reservation_reservation2">전체
           </div>
         </div>
         <div class="mypage_reservation_notice">
@@ -119,8 +125,28 @@
             <th>예약상태</th>
             <th>취소</th>
           </tr>
-          <tr>
+        <?php
+        if(isset($_GET['rownumber'])){
+        $R_Number=$_GET['rownumber'];
+      }
+        else {
+          $R_Number=0;
+        };
+
+          $CID = array();
+          $CID = unserialize($_SESSION["date"]);
+
+          for($i=0;$i<$R_Number;$i++){
+            echo ("  <tr>
             <td>12345</td>
+            <td>디럭스룸</td>
+            <td>1</td>
+            <td> $CID[$i] ~ 2020-11-12</td>
+            <td>예약</td>
+            <td><input type='submit' name='취소하기' value='취소하기'></td>
+            </tr>");
+          }; ?>
+            <!--<td>12345</td>
             <td>디럭스룸</td>
             <td>1</td>
             <td>2020-11-11 ~ 2020-11-12</td>
@@ -133,26 +159,28 @@
             <td>1</td>
             <td>2020-11-8 ~ 2020-11-10</td>
             <td>완료</td>
-            <td> </td>
-          </tr>
+            <td> </td>-->
+
         </table>
       </div>
     </div>
+    </form>
   </main>
+
 
   <!-- 하단 -->
   <footer>
     <div class="bottomMenu">
       <ul>
-        <li><a style="text-align: left;" href="../roomList.html">예약하기</a></li>
-        <li><a href="../introduce.html">호텔소개</a></li>
-        <li><a style="text-align: right;" href="../customerService.html">고객문의</a></li>
-        <li><a style="text-align: right;" href="../notice.html">게시판</a></li>
+        <li><a style="text-align: left;" href="../roomList.php">예약하기</a></li>
+        <li><a href="../introduce.php">호텔소개</a></li>
+        <li><a style="text-align: right;" href="../customerService.php">고객문의</a></li>
+        <li><a style="text-align: right;" href="../notice.php">게시판</a></li>
       </ul>
     </div>
     <div class="bottomMid">
       <div class="bottomLogo">
-        <a href="../main.html"><img src="../img/logo.png" class="bottomLogo" /></a>
+        <a href="../main.php"><img src="../img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="../img/snsLogo.png">

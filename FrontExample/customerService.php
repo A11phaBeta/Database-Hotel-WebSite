@@ -15,25 +15,35 @@
   <header>
     <!-- 로그인, 회원가입 -->
     <div class="loginSign">
-      <a href="loginpage.html" class="login">로그인</a>
-      <a href="signUp.html" class="sign">회원가입</a>
+      <?php session_start(); if($_SESSION["username"]){
+        echo ("<a href='mypage/membership.php' class='login'>마이페이지</a>");
+      }
+      else {
+        echo '<a href="loginpage.php" class="login">로그인</a>';
+      }?>
+      <?php if($_SESSION["username"]){
+        echo ('<a href="../api/modules/logout.php" class="sign">로그아웃</a>');
+      }
+      else {
+        echo '<a href="signUp.php" class="sign">회원가입</a>';
+      }?>
     </div>
 
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
         <div class="menu1">
-          <a href="roomList.html">예약하기</a>
+          <a href="roomList.php">예약하기</a>
         </div>
         <div class="menu2">
-          <a href="introduce.html">호텔소개</a>
+          <a href="introduce.php">호텔소개</a>
         </div>
-        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="logo" /></a>
         <div class="menu3">
-          <a href="customerService.html">고객문의</a>
+          <a href="customerService.php">고객문의</a>
         </div>
         <div class="menu4">
-          <a href="notice.html">게시판</a>
+          <a href="notice.php">게시판</a>
         </div>
       </div>
     </nav>
@@ -89,11 +99,11 @@
         <div class="cschk">
           <input type="checkbox" name="privacy" value="동의"><a class="cs_privacy_checklist">개인정보 수집
             이용동의</a>&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="Database_Hotel_Website_Privacy.html" class="booking_look_privacy"><u>약관보기</u></a>
+          <a href="Database_Hotel_Website_Privacy.php" class="booking_look_privacy"><u>약관보기</u></a>
         </div>
         <div class="cs_qnaBtn">
           <input type="submit" value="신청" id="qnaBtn1" onClick="btn_js_click();">
-          <button type="button" id="qnaBtn2" onclick="location.href='main.html'">
+          <button type="button" id="qnaBtn2" onclick="location.href='main.php'">
             <span>취소</span>
           </button>
         </div>
@@ -105,15 +115,15 @@
   <footer>
     <div class="bottomMenu">
       <ul>
-        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
-        <li><a href="introduce.html">호텔소개</a></li>
-        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
-        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+        <li><a style="text-align: left;" href="roomList.php">예약하기</a></li>
+        <li><a href="introduce.php">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.php">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.php">게시판</a></li>
       </ul>
     </div>
     <div class="bottomMid">
       <div class="bottomLogo">
-        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="img/snsLogo.png">

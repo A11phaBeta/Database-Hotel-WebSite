@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -12,24 +15,35 @@
   <header>
     <!-- 로그인, 회원가입 -->
     <div class="loginSign">
-      <a href="loginpage.html" class="login">로그인</a>
-      <a href="signUp.html" class="sign">회원가입</a>
+      <?php session_start(); if($_SESSION["username"]){
+        echo ("<a href='mypage/membership.php' class='login'>마이페이지</a>");
+      }
+      else {
+        echo '<a href="loginpage.php" class="login">로그인</a>';
+      }?>
+      <?php if($_SESSION["username"]){
+        echo ('<a href="../api/modules/logout.php" class="sign">로그아웃</a>');
+      }
+      else {
+        echo '<a href="signUp.php" class="sign">회원가입</a>';
+      }?>
     </div>
+
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
         <div class="menu1">
-          <a href="roomList.html">예약하기</a>
+          <a href="roomList.php">예약하기</a>
         </div>
         <div class="menu2">
-          <a href="introduce.html">호텔소개</a>
+          <a href="introduce.php">호텔소개</a>
         </div>
-        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="logo" /></a>
         <div class="menu3">
-          <a href="customerService.html">고객문의</a>
+          <a href="customerService.php">고객문의</a>
         </div>
         <div class="menu4">
-          <a href="notice.html">게시판</a>
+          <a href="notice.php">게시판</a>
         </div>
       </div>
     </nav>
@@ -38,6 +52,9 @@
   <!-- 메인 -->
   <main>
     <div class="container">
+      <div class="imageSlide">
+        <img src="img/imageSlide.jpg" class="imgSld1" />
+      </div>
       <!-- 메인메뉴 예약 바-->
       <div class="bookingMainBar">
         <div class="bookingSelect">
@@ -57,7 +74,7 @@
                     <tr>
                       <td>
                         <div>
-                          <input type="date" id="currnetDate" class="date" />
+                          <input type="date" id="currnetDate" class="date"/>
                         </div>
                       </td>
                     </tr>
@@ -68,7 +85,7 @@
                     <tr>
                       <td>
                         <div>
-                          <input type="date" id="currnetDate1" class="date" />
+                          <input type="date" id="currnetDate1" class="date"/>
                         </div>
                       </td>
                     </tr>
@@ -135,58 +152,21 @@
             </table>
           </form>
           <!-- 방 검색 -->
-          <a class="searchRoom" href="roomList.html">
+          <a class="searchRoom" href="roomList.php">
             <p>search</p>
           </a>
         </div>
       </div>
-      <!-- 객실리스트 -->
-     <div class="rList">
-       <a>객실 선택</a>
-       <hr class="two">
-     </div>
-     <div class ="roomList">
-       <a><img src="img/room_img.png" class="room_img"></a>
-       <div class= "roomtitle">
-         <a class="roommaintitle">스탠다드 더블<br><br></a><a>이 방은 침대가 2개 입니다.</a>
-       </div>
-       <div class="btn_area2">
-         <button type="button" id="btnJoin" onclick="location.href='roomList_loginpage.html'">
-           <span>예약하기</span>
-         </button>
-       </div>
-       <div class="room_price"><a class="room_price1">500,000~</a>
-         <div class="roomdate">1박</div>
+      <!-- 행사 이미지 -->
+      <div class="eventPage">
+        <img src="img/image1.jpg" class="imgSld" />
       </div>
-     </div>
-     <div class ="roomList">
-       <a><img src="img/room_img.png" class="room_img"></a>
-       <div class= "roomtitle">
-         <a class="roommaintitle">스탠다드 더블<br><br></a><a>이 방은 침대가 2개 입니다.</a>
-       </div>
-       <div class="btn_area2">
-         <button type="button" id="btnJoin" onclick="location.href='roomList_loginpage.html'">
-           <span>예약하기</span>
-         </button>
-       </div>
-       <div class="room_price"><a class="room_price1">500,000~</a>
-         <div class="roomdate">1박</div>
+      <div class="eventPage">
+        <img src="img/image2.jpg" class="imgSld" />
       </div>
-     </div>
-     <div class ="roomList">
-       <a><img src="img/room_img.png" class="room_img"></a>
-       <div class= "roomtitle">
-         <a class="roommaintitle">스탠다드 더블<br><br></a><a>이 방은 침대가 2개 입니다.</a>
-       </div>
-       <div class="btn_area2">
-         <button type="button" id="btnJoin" onclick="location.href='roomList_loginpage.html'">
-           <span>예약하기</span>
-         </button>
-       </div>
-       <div class="room_price"><a class="room_price1">500,000~</a>
-         <div class="roomdate">1박</div>
+      <div class="eventPage">
+        <img src="img/image3.jpg" class="imgSld2" />
       </div>
-     </div>
     </div>
   </main>
 
@@ -194,15 +174,15 @@
   <footer>
     <div class="bottomMenu">
       <ul>
-        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
-        <li><a href="introduce.html">호텔소개</a></li>
-        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
-        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+        <li><a style="text-align: left;" href="roomList.php">예약하기</a></li>
+        <li><a href="introduce.php">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.php">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.php">게시판</a></li>
       </ul>
     </div>
     <div class="bottomMid">
       <div class="bottomLogo">
-        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="img/snsLogo.png">

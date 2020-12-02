@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script> function SUBMIT() { document.room.submit();} </script>
 </head>
 
 <body>
@@ -14,25 +14,35 @@
   <header>
     <!-- 로그인, 회원가입 -->
     <div class="loginSign">
-      <a href="loginpage.html" class="login">로그인</a>
-      <a href="signUp.html" class="sign">회원가입</a>
+      <?php session_start(); if($_SESSION["username"]){
+        echo ("<a href='mypage/membership.php' class='login'>마이페이지</a>");
+      }
+      else {
+        echo '<a href="roomList_loginpage.php" class="login">로그인</a>';
+      }?>
+      <?php if($_SESSION["username"]){
+        echo ('<a href="../api/modules/logout.php" class="sign">로그아웃</a>');
+      }
+      else {
+        echo '<a href="signUp.php" class="sign">회원가입</a>';
+      }?>
     </div>
 
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
         <div class="menu1">
-          <a href="roomList.html">예약하기</a>
+          <a href="roomList.php">예약하기</a>
         </div>
         <div class="menu2">
-          <a href="introduce.html">호텔소개</a>
+          <a href="introduce.php">호텔소개</a>
         </div>
-        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="logo" /></a>
         <div class="menu3">
-          <a href="customerService.html">고객문의</a>
+          <a href="customerService.php">고객문의</a>
         </div>
         <div class="menu4">
-          <a href="notice.html">게시판</a>
+          <a href="notice.php">게시판</a>
         </div>
       </div>
     </nav>
@@ -40,15 +50,13 @@
 
   <!-- 메인 -->
   <main>
+<form name="room" method="post" action="../api/modules/book.php">
     <div class="container">
-      <div class="imageSlide">
-        <img src="img/imageSlide.jpg" class="imgSld" />
-      </div>
       <!-- 메인메뉴 예약 바-->
       <div class="bookingMainBar">
         <div class="bookingSelect">
           <!-- 체크인, 체크아웃, 객실, 인원 수 -->
-          <form>
+
             <table>
               <tr>
                 <th>체크인</th>
@@ -63,7 +71,7 @@
                     <tr>
                       <td>
                         <div>
-                          <input type="date" id="currnetDate" class="date"/>
+                          <input type="date" id="currnetDate" name="currentDate" class="date" />
                         </div>
                       </td>
                     </tr>
@@ -74,7 +82,7 @@
                     <tr>
                       <td>
                         <div>
-                          <input type="date" id="currnetDate1" class="date"/>
+                          <input type="date" id="currnetDate1" name="currentDate1" class="date" />
                         </div>
                       </td>
                     </tr>
@@ -108,7 +116,7 @@
                         </div>
                       </td>
                       <td>
-                        <input type="text" name="num" value="1" id="" class="num" />
+                        <input type="text" name="num1" value="1" id="" class="num" />
                       </td>
                       <td>
                         <div>
@@ -127,7 +135,7 @@
                         </div>
                       </td>
                       <td>
-                        <input type="text" name="num" value="0" id="" class="num" />
+                        <input type="text" name="num2" value="0" id="" class="num" />
                       </td>
                       <td>
                         <div>
@@ -139,39 +147,82 @@
                 </td>
               </tr>
             </table>
-          </form>
           <!-- 방 검색 -->
-          <a class="searchRoom" href="roomList.html">
+          <a class="searchRoom" href="roomList.php">
             <p>search</p>
           </a>
         </div>
       </div>
-      <!-- 행사 이미지 -->
-      <div class="eventPage">
-        <img src="img/image1.jpg" class="imgSld" />
+      <!-- 객실리스트 -->
+     <div class="rList">
+       <a>객실 선택</a>
+       <hr class="two">
+     </div>
+     <div class ="roomList">
+       <a><img src="img/room_img.png" class="room_img"></a>
+
+       <div class= "roomtitle">
+         <a class="roommaintitle">스탠다드 싱글<br><br></a><a>이 방은 침대가 1개 입니다.</a>
+       </div>
+       <div class="btn_area2">
+           <!--<input type="hidden" name="cuba" value="1"/>-->
+           <button type='submit' name='cuba' value='1' id='btnJoin'>
+           <!-- -->
+            <span>예약하기</span>
+           </button>
+       </div>
+
+       <div class="room_price"><a class="room_price1">500,000~</a>
+         <div class="roomdate">1박</div>
       </div>
-      <div class="eventPage">
-        <img src="img/image2.jpg" class="imgSld" />
+     </div>
+     <div class ="roomList">
+       <a><img src="img/room_img.png" class="room_img"></a>
+       <div class= "roomtitle">
+          <a class="roommaintitle">스탠다드 더블<br><br></a><a>이 방은 침대가 2개 입니다.</a>
+       </div>
+       <div class="btn_area2">
+           <button type='submit' name='cuba' value='2' id='btnJoin'>
+           <span>예약하기</span>
+         </button>
+
+       </div>
+       <div class="room_price"><a class="room_price1">500,000~</a>
+         <div class="roomdate">1박</div>
       </div>
-      <div class="eventPage">
-        <img src="img/image3.jpg" class="imgSld" />
+     </div>
+     <div class ="roomList">
+       <a><img src="img/room_img.png" class="room_img"></a>
+       <div class= "roomtitle">
+         <a class="roommaintitle">스탠다드 쿼터<br><br></a><a>이 방은 침대가 4개 입니다.</a>
+       </div>
+       <div class="btn_area2">
+           <!-- <input type="hidden" name="cuba" value="3"/>-->
+           <button type='submit' name='cuba' value='3' id='btnJoin'>
+           <span>예약하기</span>
+         </button>
+
+       </div>
+       <div class="room_price"><a class="room_price1">500,000~</a>
+         <div class="roomdate">1박</div>
       </div>
+     </div>
     </div>
   </main>
-
+</form>
   <!-- 하단 -->
   <footer>
     <div class="bottomMenu">
       <ul>
-        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
-        <li><a href="introduce.html">호텔소개</a></li>
-        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
-        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+        <li><a style="text-align: left;" href="roomList.php">예약하기</a></li>
+        <li><a href="introduce.php">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.php">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.php">게시판</a></li>
       </ul>
     </div>
     <div class="bottomMid">
       <div class="bottomLogo">
-        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="img/snsLogo.png">
@@ -185,5 +236,13 @@
     </div>
   </footer>
   <script src="js/mainBookingBar.js"></script>
+  <script> /*$("button").click(
+    function here(){
+      var index= $("button").index(this);
+      alert(index);
+      location.href = "../api/modules/booking.php?cuba=" + index;
+      submit();
+    }
+  )*/</script>
 </body>
 </html>

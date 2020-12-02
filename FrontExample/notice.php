@@ -14,25 +14,35 @@
   <header>
     <!-- 로그인, 회원가입 -->
     <div class="loginSign">
-      <a href="loginpage.html" class="login">로그인</a>
-      <a href="signUp.html" class="sign">회원가입</a>
+      <?php session_start(); if($_SESSION["username"]){
+        echo ("<a href='mypage/membership.php' class='login'>마이페이지</a>");
+      }
+      else {
+        echo '<a href="loginpage.php" class="login">로그인</a>';
+      }?>
+      <?php if($_SESSION["username"]){
+        echo ('<a href="../api/modules/logout.php" class="sign">로그아웃</a>');
+      }
+      else {
+        echo '<a href="signUp.php" class="sign">회원가입</a>';
+      }?>
     </div>
 
     <!-- 상단 메뉴 -->
     <nav>
       <div class="menu">
         <div class="menu1">
-          <a href="roomList.html">예약하기</a>
+          <a href="roomList.php">예약하기</a>
         </div>
         <div class="menu2">
-          <a href="introduce.html">호텔소개</a>
+          <a href="introduce.php">호텔소개</a>
         </div>
-        <a href="main.html"><img src="img/logo.png" class="logo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="logo" /></a>
         <div class="menu3">
-          <a href="customerService.html">고객문의</a>
+          <a href="customerService.php">고객문의</a>
         </div>
         <div class="menu4">
-          <a href="notice.html">게시판</a>
+          <a href="notice.php">게시판</a>
         </div>
       </div>
     </nav>
@@ -67,48 +77,48 @@
         <tbody class = "notice_tbody">
           <tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
           </tr>
           <tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
           </tr>
           <tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
           </tr><tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
           </tr>
           <tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
           </tr>
           <tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
           </tr>
           <tr class = "notice_tr">
             <td class = "notice_td">1</td>
-            <td onclick="location.href='main.html'"class = "notice_td1">공지사항1</td>
+            <td onclick="location.href='main.php'"class = "notice_td1">공지사항1</td>
             <td class = "notice_td">이승섭</td>
             <td class = "notice_td">2020.11.17</td>
             <td class = "notice_td">100</td>
@@ -123,7 +133,7 @@
         <a href="#" onclick=""><img src="img/next_next.png" alt="next_next" class = "notice_next_nextimg"></a>
       </div>
       <div class="notice_button2">
-        <button type="button" name="button" class = notice_button onclick="location.href='noticewrite.html'">글쓰기</button>
+        <button type="button" name="button" class = notice_button onclick="location.href='noticewrite.php'">글쓰기</button>
       </div>
     </div>
   </main>
@@ -132,15 +142,15 @@
   <footer>
     <div class="bottomMenu">
       <ul>
-        <li><a style="text-align: left;" href="roomList.html">예약하기</a></li>
-        <li><a href="introduce.html">호텔소개</a></li>
-        <li><a style="text-align: right;" href="customerService.html">고객문의</a></li>
-        <li><a style="text-align: right;" href="notice.html">게시판</a></li>
+        <li><a style="text-align: left;" href="roomList.php">예약하기</a></li>
+        <li><a href="introduce.php">호텔소개</a></li>
+        <li><a style="text-align: right;" href="customerService.php">고객문의</a></li>
+        <li><a style="text-align: right;" href="notice.php">게시판</a></li>
       </ul>
     </div>
     <div class="bottomMid">
       <div class="bottomLogo">
-        <a href="main.html"><img src="img/logo.png" class="bottomLogo" /></a>
+        <a href="main.php"><img src="img/logo.png" class="bottomLogo" /></a>
       </div>
       <div>
         <img class="snsLogo" src="img/snsLogo.png">
