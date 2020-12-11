@@ -1,0 +1,137 @@
+.carousel-caption > *{
+    font-weight: bold;
+}
+
+
+
+.booking-form{
+    background: rgb(252, 244, 228);
+    padding: 1rem 0 !important;
+}
+
+.booking-form > form > table{
+    padding: 2% 1% !important;
+    height: 6rem;
+    width: 73%;
+
+}
+.booking-form > form > table > thead > tr{
+    text-align: center;
+}
+
+.booking-form > form > table > thead > tr > th{
+    text-align: center;
+}
+
+.booking-form > form > table > thead > tr > th > input{
+    text-decoration: none;
+    color: #350f00;
+    border: 1px solid #350f00;
+    padding : 0.75rem 2rem !important;
+}
+
+
+
+.booking-form > legend{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.booking-form > form > table > tbody > tr{
+    text-align: center;
+}
+
+.booking-form > form > table > tbody > tr > th{
+    text-align: center;
+}
+
+.booking-form > form > table > tbody > tr > th > input{
+    text-decoration: none;
+    color: #350f00;
+    border: 1px solid #350f00;
+    padding : 0.75rem 1rem !important;
+}
+
+.booking-form > form > table > tbody > tr > th > a:hover{
+    text-decoration: none;
+    color : #fff;
+    background-color: #350f00;
+    border: 1px solid #350f00;
+    padding : 0.75rem 1rem !important;
+}
+.number-counter{
+    text-align: center;
+    line-height: 2rem;
+}
+.number-counter > *{
+}
+.number-counter > img{
+    width: 0.5rem;
+    
+}
+
+.number-counter > input{
+    background-color: transparent;
+    text-align: center;
+
+    height: 2rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    background-color: transparent;
+    border : 0;
+    text-align: center;
+}
+
+.intro-hotel{
+    width: 68.5%;
+    padding: 1rem 0 !important;
+    text-align: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.intro-hotel > h4{
+    text-align:center;
+    margin : 1rem 0 ;
+    font-weight: bold;
+}
+
+.intro-hotel > img{
+    margin: 1rem 0;
+    width: 100%;
+    height: 300px;
+}
+
+.intro-content{
+    margin : 3rem 0 !important;
+}
+
+.intro-content > h4{
+    font-weight: bold;
+    margin : 3rem 0;
+    text-align: center !important;
+    color : #350f00;
+}
+.intro-content > *{
+
+}
+
+.intro-content > iframe{
+    width: 100%;
+}
+
+.intro-content > form > div > label{
+    font-weight: bold;
+}
+.intro-content > form > button[type="submit"]{
+    background-color: #350f00;
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+}

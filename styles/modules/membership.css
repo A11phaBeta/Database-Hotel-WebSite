@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+*{
+
+    font-family: 'Nanum Myeongjo', serif !important;
+}
+
+.header{
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+.title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 2% 0 0 0;
+    color : #4f473a;
+}
+.information{
+    font-size: 0.7rem;
+    margin: 1% 0;
+}
+
+.table{
+    width: 100%;
+    border: 2px solid #4f473a;
+    margin: 3% 0 !important;
+    border-collapse: separate;
+    border-spacing: 0;
+  
+}
+
+.table > thead > tr{
+    background : #4f473a;
+    padding: 1% 0;
+    height: 3rem;
+
+}
+
+.table > thead > tr > th{
+    color: #fff;
+}
+.table > tbody > tr{
+    margin: 3% 0 !important;
+    padding: 1% 0;
+    height: 3rem;
+}
+.table > tbody > tr > th{
+    margin: 3% 0 !important;
+}
+.table > tbody > tr > td{
+    text-align: center;
+}
+
+.table > tbody > tr > td > a{
+    text-decoration: none;
+    color : #4f473a;
+    background-color: transparent;
+}
+
+.search-content{
+    width: 100%;
+    padding: 4% 0;
+    background: #4f473a;
+    margin: 0 auto;
+}
+
+.search-content > * > *{
+    color: #fff;
+    margin: 0 2%;
+}
+.search{
+    text-align: center;
+}
+.search-btn{
+    text-align : center;
+}
+
+.search > a > input{
+    height: 2rem;
+    width: 20%;
+}
+
+.search > input{
+    height: 2.3rem;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}

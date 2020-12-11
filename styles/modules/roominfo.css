@@ -1,0 +1,164 @@
+.booking-form{
+    background: rgb(252, 244, 228);
+    padding: 1rem 0 !important;
+}
+
+.booking-form > table{
+    padding: 2% 1% !important;
+    height: 6rem;
+    width: 73%;
+
+}
+.booking-form > table > thead > tr{
+    text-align: center;
+}
+
+.booking-form > table > thead > tr > th{
+    text-align: center;
+}
+
+.booking-form > table > thead > tr > th > a{
+    text-decoration: none;
+    color: #350f00;
+    border: 1px solid #350f00;
+    padding : 0.75rem 2rem !important;
+}
+
+.booking-form > legend{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.booking-form > table > tbody > tr{
+    text-align: center;
+}
+
+.booking-form > table > tbody > tr > th{
+    text-align: center;
+}
+
+.booking-form > table > tbody > tr > th > a{
+    text-decoration: none;
+    color: #350f00;
+    border: 1px solid #350f00;
+    padding : 0.75rem 1rem !important;
+}
+.number-counter{
+    text-align: center;
+    line-height: 2rem;
+}
+.number-counter > *{
+}
+.number-counter > img{
+    width: 0.5rem;
+    
+}
+
+.number-counter > input{
+    background-color: transparent;
+    text-align: center;
+
+    height: 2rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    background-color: transparent;
+    border : 0;
+    text-align: center;
+}
+
+.intro-hotel{
+    width: 68%;
+    padding: 1rem !important;
+    text-align:center;
+    border-bottom: 1px solid #dadada;
+}
+
+.intro-hotel > h4{
+    text-align: center;
+    margin: 2rem auto;
+    width: fit-content;
+    padding: 0 5rem !important;
+    border-bottom: 1px solid #350f00;
+    font-weight: bold;
+}
+
+.intro-hotel > img{
+    margin: 1rem 0;
+    width: 100%;
+    height: 300px;
+}
+
+.intro-content{
+    margin : 3rem 0 !important;
+}
+
+.intro-content > h4{
+    font-weight: bold;
+    margin : 3rem 0;
+    text-align: center !important;
+    color : #350f00;
+}
+.intro-content > *{
+
+}
+
+.intro-content > iframe{
+    width: 100%;
+}
+
+.intro-content > form > div > label{
+    font-weight: bold;
+}
+.intro-content > form > button[type="submit"]{
+    background-color: #350f00;
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.table{
+    width: 100%;
+    border: 2px solid #4f473a;
+    margin: 3% 0 !important;
+    border-collapse: separate;
+    border-spacing: 0;
+  
+}
+
+.table > thead > tr{
+    background : #4f473a;
+    padding: 1% 0 !important;
+    height: 3rem;
+    border : 0 !important;
+
+}
+
+.table > thead > tr > th{
+    color: #fff;
+    vertical-align: middle !important;
+}
+.table > tbody > tr{
+    margin: 3% 0 !important;
+    padding: 1% 0;
+    height: 3rem;
+}
+.table > tbody > tr > th{
+    margin: 3% 0 !important;
+}
+.table > tbody > tr > td{
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.table > tbody > tr > td > a{
+    text-decoration: none;
+    color : #4f473a;
+    background-color: transparent;
+}

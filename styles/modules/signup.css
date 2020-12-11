@@ -1,0 +1,56 @@
+article{
+    
+}
+
+.login-form{
+    width: 68%;
+    padding: 4rem !important;
+    text-align:center;
+    margin : auto auto;
+}
+
+.login-form > h4{
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.login-form > div > form > button[type="submit"]{
+    background-color: #350f00;
+    width: 40%;
+    height: 3rem;
+    border-radius: 1rem;
+    margin : 2rem 0;
+}
+
+.login-form > div > form > div {
+    margin : 2rem 0;
+}
+
+.login-form > div > form > div > label {
+    font-weight: bold;
+}
+
+.login-form > div > form > div > div > label {
+    font-weight: bold;
+}
+
+.login-form > div > form > div > div > label > a{
+    color : black;
+    font-style: oblique;
+}
+
+.login-form > div > form > div > input{
+    width: 40% !important;
+    height: 3rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-form > div > form > div > select{
+    width: 40% !important;
+    height: 3rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    text-align-last: center;
+}

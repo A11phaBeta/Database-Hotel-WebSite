@@ -1,0 +1,23 @@
+audio{
+    height: 2rem;
+}
+
+footer{
+    background: rgb(252, 244, 228);
+
+    width: 100%;
+}
+
+.footer-div{
+    width: 66%;
+    padding: 1rem 0!important;
+}
+
+.footer-div > h4{
+    font-weight: bold;
+    width: fit-content;
+}
+
+.footer-div > *{
+    margin : 0.5rem 0;
+}

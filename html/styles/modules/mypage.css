@@ -1,0 +1,61 @@
+article{
+    width: 100%;
+    height:100%;
+}
+
+.left-panel{
+    float: left;
+ 
+    width: 16%;
+    border: 5px solid #4f473a;
+    padding: 2% !important;
+    margin: 3% 3%!important;
+
+}
+
+.left-panel > ul{
+    list-style: none;
+    padding : 0;
+
+}
+
+.left-panel > ul > li{ 
+    margin: 10% 4%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color : #a7a7a7
+}
+
+.left-panel > ul > a{
+    margin: 10% 4%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+
+
+.left-panel > ul > li:hover{
+    cursor: pointer;
+}
+
+.active{
+    font-weight : bold;
+    color : #000 !important;
+}
+.left-panel > h4{
+    font-weight: bold;
+}
+
+.right-panel{
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin : 2% 2% !important;
+}
+
+.right-panel > iframe{
+    width: 100%;
+    height: 100%;
+}
